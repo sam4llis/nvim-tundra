@@ -1,4 +1,4 @@
-local M = {blue}
+local M = {}
 local cp = require('nvim-tundra.api.colors')
 local highlights = { plugins = {} }
 
