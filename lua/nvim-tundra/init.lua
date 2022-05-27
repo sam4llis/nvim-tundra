@@ -8,7 +8,7 @@ highlights.common = {
   -- Normal text highlights.
   Normal = { fg = cp.gray._50, bg = cp.gray._900 },                -- Normal text.
   NormalNC = { fg = cp.gray._50, bg = cp.gray._900 },              -- Normal text in non-current windows.
-  NormalFloat = { fg = cp.gray._50, bg = cp.gray._1000 },          -- Normal text in floating windows.
+  NormalFloat = { fg = cp.gray._50, bg = '#0C121D'},               -- Normal text in floating windows.
 
   -- Fold and sign column highlights.
   Folded = { fg = cp.sky._300, bg = cp.gray._900 },                -- Line used for closed folds.
