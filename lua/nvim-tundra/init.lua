@@ -1,6 +1,6 @@
 local M = {}
 local cp = require('nvim-tundra.api.colors')
-local highlights = { plugins = {} }
+local highlights = { plugins = {}, languages = {} }
 
 -- TODO: Add `nvim-modes` feature?
 highlights.common = {
@@ -236,12 +236,21 @@ highlights.plugins.diagnostic = {
 
 highlights.plugins.lsp = { }
 
+highlights.languages.markdown = {
+  markdownTSNone = { fg = cp.indigo._200 },
+  markdownTSLiteral = { fg = cp.indigo._200, italic = true },
+}
+
 M.setup = function ()
   M.set_highlights(highlights.common)
   M.set_highlights(highlights.syntax)
 
   for _, plugin in pairs(highlights.plugins) do
     M.set_highlights(plugin)
+  end
+
+  for _, language in pairs(highlights.languages) do
+    M.set_highlights(language)
   end
 
 end
