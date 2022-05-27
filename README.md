@@ -2,6 +2,8 @@
 
 A dark Neovim colorscheme written in Lua. Requires Neovim 0.7.
 
+![Image of Tundra Theme.](https://github.com/sam4llis/nvim-tundra/blob/main/assets/nvim-tundra.png)
+
 
 ## Installation
 
