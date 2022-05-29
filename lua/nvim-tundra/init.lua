@@ -19,7 +19,7 @@ highlights.common = {
   Cursor = { bg = cp.white },                                      -- Character under the cursor.
   lCursor = { bg = cp.white },                                     -- Character under the cursor when `language-mapping` is used.
   CursorIM = { bg = cp.white },                                    -- Like Cursor, but when used in IME mode.
-  CursorColumn = { bg = cp.slate._1000 },                          -- Screen-column at the cursor, when `cursorcolumn` is set.
+  CursorColumn = { bg = '#0C121D' },                               -- Screen-column at the cursor, when `cursorcolumn` is set.
   CursorLine = { bg = cp.gray._800 },                              -- Screen-line at the cursor, when `cursorline` is set.
 
   -- Terminal cursor highlights.
