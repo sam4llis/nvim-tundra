@@ -22,10 +22,6 @@ highlights.common = {
   CursorColumn = { bg = cp.gray._1000 },                           -- Screen-column at the cursor, when `cursorcolumn` is set.
   CursorLine = { bg = cp.gray._800 },                              -- Screen-line at the cursor, when `cursorline` is set.
 
-  -- Terminal cursor highlights.
-  TermCursor = { bg = cp.sky._400 },                               -- Cursor in a focused terminal.
-  TermCursorNC = { bg = cp.gray._900 },                            -- Cursor in an unfocused terminal.
-
   -- Visual-mode highlights.
   Visual = { bg = cp.gray._800, },                                 -- Visual mode selection.
   VisualNOS = { bg = cp.gray._900, bold = true },                  -- Visual mode selection when Vim is 'Not Owning the Selection'.
