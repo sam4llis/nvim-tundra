@@ -8,7 +8,7 @@ highlights.common = {
   -- Normal text highlights.
   Normal = { fg = cp.gray._50, bg = cp.gray._900 },                -- Normal text.
   NormalNC = { fg = cp.gray._50, bg = cp.gray._900 },              -- Normal text in non-current windows.
-  NormalFloat = { fg = cp.gray._50, bg = '#0C121D'},               -- Normal text in floating windows.
+  NormalFloat = { fg = cp.gray._50, bg = cp.gray._1000 },          -- Normal text in floating windows.
 
   -- Fold and sign column highlights.
   Folded = { fg = cp.sky._300, bg = cp.gray._900 },                -- Line used for closed folds.
@@ -19,7 +19,7 @@ highlights.common = {
   Cursor = { bg = cp.white },                                      -- Character under the cursor.
   lCursor = { bg = cp.white },                                     -- Character under the cursor when `language-mapping` is used.
   CursorIM = { bg = cp.white },                                    -- Like Cursor, but when used in IME mode.
-  CursorColumn = { bg = '#0C121D' },                               -- Screen-column at the cursor, when `cursorcolumn` is set.
+  CursorColumn = { bg = cp.gray._1000 },                           -- Screen-column at the cursor, when `cursorcolumn` is set.
   CursorLine = { bg = cp.gray._800 },                              -- Screen-line at the cursor, when `cursorline` is set.
 
   -- Terminal cursor highlights.
@@ -71,7 +71,7 @@ highlights.common = {
 
   -- Diff highlights.
   DiffAdd = { fg = cp.green._300 },                                -- Diff mode: Added line.
-  DiffChange = { fg = cp.amber._300 },                             -- Diff mode: Changed line.
+  DiffChange = { fg = cp.yellow._300 },                             -- Diff mode: Changed line.
   DiffDelete = { fg = cp.red._300 },                               -- Diff mode: Deleted line.
   DiffText = { fg = cp.sky._300 },                                 -- Diff mode: Changed text within a changed line.
 
@@ -105,7 +105,7 @@ highlights.syntax = {
   Structure = { fg = cp.yellow._300 }, --  struct, union, enum, etcp.
   StorageClass = { fg = cp.yellow._300 }, -- static, register, volatile, etcp.
   Identifier = { fg = cp.violet._200 },
-  Constant = { fg = cp.slate._200 },
+  Constant = { fg = cp.gray._200 },
   PreProc = { fg = cp.pink._300 },
   PreCondit = {fg = cp.white },
   Include = { fg = cp.pink._300 },
@@ -130,7 +130,7 @@ highlights.syntax = {
   Operator = { fg = cp.rose._200 },
   Title = { fg = cp.blue._300 }, -- Titles for output from `:set all`, `autocmd` etc.
   Tag = { fg = cp.sky._300, bold = true },
-  Delimiter = { fg = cp.slate._50 }, -- Delimiters (e.g., commas in a Lua table).
+  Delimiter = { fg = cp.gray._50 }, -- Delimiters (e.g., commas in a Lua table).
   Comment = { fg = cp.gray._500, italic = true }, -- Comments.
   SpecialComment = { fg = cp.red._900, italic = true }, -- Special comments.
   Todo = { fg = cp.green._300 },
@@ -156,10 +156,10 @@ highlights.plugins.treesitter = {
   TSFloat = { fg = cp.red._900 },
   TSFunction = { fg = cp.sky._200, italic = true },
   TSFuncBuiltin = { fg = '#FBC19D' },
-  TSFuncMacro = { fg = '#FC9C9C' },
+  TSFuncMacro = { fg = cp.red._350 },
   TSInclude = { fg = cp.indigo._200 }, -- import x as y
   TSKeyword = { fg = cp.red._300 }, -- Return statement
-  TSKeywordFunction = { fg = '#FC9C9C' }, --def, lambda
+  TSKeywordFunction = { fg = cp.red._350 }, --def, lambda
   TSKeywordOperator = { fg = cp.indigo._200 }, -- and, or
   TSKeywordReturn = { fg = cp.indigo._200 }, --return, yield
   TSLabel = { fg = cp.indigo._300 }, -- Vim documentation titles
@@ -175,10 +175,10 @@ highlights.plugins.treesitter = {
   TSPunctSpecial = { fg = cp.gray._400 },
   TSRepeat = { fg = cp.red._200 }, -- for
   TSStorageClass = { fg = cp.red._900 },
-  TSString = { fg = '#B5E8B0' }, --strings
+  TSString = { fg = cp.green._300 }, --strings
   TSStringRegex = { fg = cp.red._900 }, -- ?
   TSStringEscape = { fg = cp.sky._300, italic = true },
-  TSStringSpecial = { fg = '#FC9C9C', italic = true },
+  TSStringSpecial = { fg = cp.red._350, italic = true },
   TSSymbol = { fg = cp.red._900 },
   TSTag = { fg = cp.orange._300 }, --html tags
   TSTagAttribute = { fg = cp.indigo._300, italic = true }, --html attr
@@ -192,7 +192,7 @@ highlights.plugins.treesitter = {
   TSLiteral = { fg = cp.red._900 },
   TSURI = { fg = cp.sky._300, underline = true },
   TSMath = { fg = cp.red._900 }, -- latex math
-  TSTextReference = { fg = cp.red._900 }, -- footnotes, citations
+  TSTextReference = { fg = cp.indigo._200 }, -- footnotes, citations
   TSEnvironment = { fg = cp.red._900 }, -- text enrionemtn of markup languages
   TSEnvironmentName = { fg = cp.red._900 }, -- e.g. \begin in latex.
   TSNote = { fg = cp.indigo._300, bold = true },--NOTE:
@@ -203,7 +203,7 @@ highlights.plugins.treesitter = {
   TSTypeQualifier = { fg = cp.red._900 },
   TSTypeDefinition = { fg = cp.red._900 },
   TSVariable = { fg = cp.gray._50 },
-  TSVariableBuiltin = { fg = '#FFEBED', italic = true }, -- this, self
+  TSVariableBuiltin = { fg = cp.rose._50, italic = true }, -- this, self
 }
 
 highlights.plugins.diagnostic = {
