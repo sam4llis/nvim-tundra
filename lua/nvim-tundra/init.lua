@@ -232,6 +232,23 @@ highlights.plugins.diagnostic = {
 
 highlights.plugins.lsp = { }
 
+highlights.plugins.telescope = {
+  TelescopeSelection = { fg = cp.sky._300 },
+
+  TelescopePromptPrefix = { fg = cp.sky._300 },
+  TelescopePromptNormal = { bg = cp.gray._875 },
+  TelescopeResultsNormal = { bg = cp.gray._975 },
+  TelescopePreviewNormal = { bg = cp.gray._1000 },
+
+  TelescopePromptBorder = { fg = cp.gray._875, bg = cp.gray._875 },
+  TelescopeResultsBorder = { fg = cp.gray._975, bg = cp.gray._975 },
+  TelescopePreviewBorder = { fg = cp.gray._1000, bg = cp.gray._1000 },
+
+  TelescopePromptTitle = { fg = cp.gray._875, bg = cp.gray._875 },
+  TelescopeResultsTitle = { fg = cp.gray._975, bg = cp.gray._975 },
+  TelescopePreviewTitle = { fg = cp.gray._1000, bg = cp.gray._1000 },
+}
+
 highlights.languages.markdown = {
   markdownTSNone = { fg = cp.indigo._200 },
   markdownTSLiteral = { fg = cp.indigo._200, italic = true },
