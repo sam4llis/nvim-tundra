@@ -1,5 +1,7 @@
+local bg = vim.opt.background:get()
+local cp = require('nvim-tundra.api.colors.' .. bg)
+
 local M = {}
-local cp = require('nvim-tundra.api.colors')
 local highlights = { plugins = {}, languages = {} }
 
 -- TODO: Add `nvim-modes` feature?
