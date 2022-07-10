@@ -1,2 +1,5 @@
 # Ignore system files.
 .DS_Store
+
+# Ignore Vim session.
+Session.vim
