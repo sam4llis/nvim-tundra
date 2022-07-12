@@ -1,3 +1,7 @@
+-- TODO: There are a lot of colours which will be used very similarly in the
+-- Vim syntax and Treesitter highlights. Would it be a good idea to group these
+-- highlight groups together?
+
 local bg = vim.opt.background:get()
 local cp = require('nvim-tundra.api.colors.' .. bg)
 local highlights = { plugins = {}, languages = {} }
@@ -5,96 +9,86 @@ local highlights = { plugins = {}, languages = {} }
 highlights.common = {
 
   -- Normal text highlights.
-  Normal = { fg = cp.gray._900, bg = cp.gray._50 },                -- Normal text.
-  NormalNC = { fg = cp.gray._50, bg = cp.gray._900 },              -- Normal text in non-current windows.
-  NormalFloat = { fg = cp.gray._50, bg = cp.gray._1000 },          -- Normal text in floating windows.
+  Normal = { fg = cp.gray._900, bg = cp.gray._50 },  -- Normal text.
+  NormalNC = { fg = cp.gray._900, bg = cp.gray._50 },  -- Normal text in non-current windows.
+  NormalFloat = { fg = cp.gray._900, bg = cp.gray._200 },  -- Normal text in floating windows.
 
   -- Fold and sign column highlights.
-  Folded = { fg = cp.sky._300, bg = cp.gray._900 },                -- Line used for closed folds.
-  FoldColumn = { fg = cp.sky._300, bg = cp.gray._900 },            -- The `foldcolumn`.
-  SignColumn = { fg = cp.gray._200, bg = cp.gray._900 },           -- Column where signs are displayed.
+  Folded = { fg = cp.sky._600, bg = cp.gray._50 },  -- Line used for closed folds.
+  FoldColumn = { fg = cp.sky._600, bg = cp.gray._50 },  -- The `foldcolumn`.
+  SignColumn = { fg = cp.gray._200, bg = cp.gray._50 },  -- Column where signs are displayed.
 
   -- Cursor highlights.
-  Cursor = { bg = cp.white },                                      -- Character under the cursor.
-  lCursor = { bg = cp.white },                                     -- Character under the cursor when `language-mapping` is used.
-  CursorIM = { bg = cp.white },                                    -- Like Cursor, but when used in IME mode.
-  CursorColumn = { bg = cp.gray._1000 },                           -- Screen-column at the cursor, when `cursorcolumn` is set.
-  CursorLine = { bg = cp.gray._800 },                              -- Screen-line at the cursor, when `cursorline` is set.
+  Cursor = { bg = cp.black },  -- Character under the cursor.
+  lCursor = { bg = cp.black },  -- Character under the cursor when `language-mapping` is used.
+  CursorIM = { bg = cp.black },  -- Like Cursor, but when used in IME mode.
+  CursorColumn = { bg = cp.gray._100 },  -- Screen-column at the cursor, when `cursorcolumn` is set.
+  CursorLine = { bg = cp.gray._100 },  -- Screen-line at the cursor, when `cursorline` is set.
 
   -- Visual-mode highlights.
-  Visual = { bg = cp.gray._800, },                                 -- Visual mode selection.
-  VisualNOS = { bg = cp.gray._900, bold = true },                  -- Visual mode selection when Vim is 'Not Owning the Selection'.
+  Visual = { bg = cp.gray._200 },  -- Visual mode selection.
+  VisualNOS = { bg = cp.gray._200, bold = true },  -- Visual mode selection when Vim is 'Not Owning the Selection'.
 
   -- Line number highlights.
-  LineNr = { fg = cp.gray._600 },                                  -- Line number for `:number` and `:#` commands, and when `number` or `relativenumber` option is set.
-  CursorLineNr = { fg = cp.sky._300 },                             -- Like LineNr when `cursorline` is set and `cursorlineopt` contains `number` or is `both`, for the cursor line.
+  LineNr = { fg = cp.gray._500 },  -- Line number for `:number` and `:#` commands, and when `number` or `relativenumber` option is set. //FIXME:
+  CursorLineNr = { fg = cp.sky._600 },  -- Like LineNr when `cursorline` is set and `cursorlineopt` contains `number` or is `both`, for the cursor line.
 
   -- Popup menu highlights.
-  Pmenu = { fg = cp.red._300, bg = cp.gray._900 },                 -- Popup menu: Normal item.
-  PmenuSel = { fg = cp.red._300, bg = cp.gray._900, bold = true }, -- Popup menu: Selected item.
-  PmenuSbar = { bg = cp.red._300 },                                -- Popup menu: Scrollbar.
-  PmenuThumb = { bg = cp.blue._300 },                              -- Popup menu: Thumb of the scrollbar.
-  Question = { fg = cp.blue._300 },                                -- `hit-enter` prompt and yes/no questions.
+  Pmenu = { fg = cp.sky._600, bg = cp.gray._200},  -- Popup menu: Normal item.
+  PmenuSel = { fg = cp.sky._600, bg = cp.gray._300, bold = true },  -- Popup menu: Selected item.
+  PmenuSbar = { bg = cp.gray_300 },  -- Popup menu: Scrollbar.
+  PmenuThumb = { bg = cp.sky._600 },  -- Popup menu: Thumb of the scrollbar.
+  Question = { fg = cp.sky._600 },  -- `hit-enter` prompt and yes/no questions.
 
   -- `showmode` highlights.
-  ModeMsg = { fg = cp.gray._50, bold = true },                     -- `showmode' message (e.g., "-- INSERT --").
-  MsgArea = { fg = cp.gray._50 },                                  -- Area for messages and cmdline.
-  MsgSeparator = {},                                               -- Separator for scrolled messages, `mgsep` flag of `display`.
+  ModeMsg = { fg = cp.sky._600, bold = true },  -- `showmode' message (e.g., "-- INSERT --").
+  MsgArea = { fg = cp.sky._600 },  -- Area for messages and cmdline.
+  MsgSeparator = {},  -- Separator for scrolled messages, `mgsep` flag of `display`.
 
   -- Search/substitution highlights.
-  Search = { bg = cp.gray._900, fg = cp.pink._300, bold = true },  -- Last search pattern highlighting. Also used for similar items that need to stand out.
-  Substitute = { fg = cp.red._300, bg = cp.gray._900 },            -- :substitute replacement text highlighting.
+  Search = { fg = cp.red._500, bg = cp.gray._200, bold = true },  -- Last search pattern highlighting. Also used for similar items that need to stand out.
+  Substitute = { fg = cp.red._500, bg = cp.gray._200 },  -- :substitute replacement text highlighting.
 
   -- Statusline highlights.
-  StatusLine = { fg = cp.gray._50, bg = cp.gray._900 },            -- Status line of the current window.
-  StatusLineNC = { fg = cp.gray._300, bg = cp.gray._900 },         -- Status lines of not-current windows.
+  StatusLine = { fg = cp.gray._900, bg = cp.gray._100 },  -- Status line of the current window.
+  StatusLineNC = { fg = cp.gray._50, bg = cp.gray._50 },  -- Status lines of not-current windows.//FIXME:
 
-  -- Tabline highlights.
-  TabLine = { fg = cp.gray._50, bg = cp.gray._900 },               -- Tab pages line, not active tab page label.
-  TabLineFill = { bg = cp.gray._1000 },                            -- Tab pages line, where there are no labels.
-  TabLineSel = { fg = cp.indigo._300, bg = cp.gray._900 },         -- Tab pages line, active tab page label.
+  Tabline = { bg = cp.gray._100 },  -- Tab pages line, not active tab page label.
+  TabLineFill = { bg = cp.gray._100 },  -- Tab pages line, where there are no labels.
+  TabLineSel = { fg = cp.sky._600, bg = cp.gray._100 },  -- Tab pages line, active tab page label.
 
   -- Spelling highlights.
-  SpellBad = { sp = cp.red._300, underline = true },               -- Word that is not recognised by the spellchecker.
-  SpellCap = { sp = cp.yellow._300, underline = true },            -- Word that should start with a capital.
-  SpellLocal = { sp = cp.blue._300, underline = true },            -- Word that is recognised by the spellchecker as one that is used in another region.
-  SpellRare = { sp = cp.green._300, underline = true },            -- Word that is recognised by the spellchecker as one that is hardly ever used.
+  -- FIXME
+  SpellBad = { sp = cp.red._600, underline = true },  -- Word that is not recognised by the spellchecker.
+  SpellCap = { sp = cp.yellow._600, underline = true },  -- Word that should start with a capital.
+  SpellLocal = { sp = cp.sky._100, underline = true },  -- Word that is recognised by the spellchecker as one that is used in another region.
+  SpellRare = { sp = cp.green._300, underline = true },  -- Word that is recognised by the spellchecker as one that is hardly ever used.
 
   -- Warning/Error message highlights.
-  WarningMsg = { fg = cp.yellow._300 },                            -- Warning messages on the command line.
-  ErrorMsg = { fg = cp.red._300, bold = true, italic = true },     -- Error messages on the command line.
+  WarningMsg = { fg = cp.yellow._600 },  -- Warning messages on the command line. //FIXME: Change ugly yellow warning color
+  ErrorMsg = { fg = cp.red._600, bold = true, italic = true },  -- Error messages on the command line.
 
   -- Diff highlights.
-  DiffAdd = { fg = cp.green._300 },                                -- Diff mode: Added line.
-  DiffChange = { fg = cp.yellow._300 },                             -- Diff mode: Changed line.
-  DiffDelete = { fg = cp.red._300 },                               -- Diff mode: Deleted line.
-  DiffText = { fg = cp.sky._300 },                                 -- Diff mode: Changed text within a changed line.
+  DiffAdd = { fg = cp.green._500 },  -- Diff mode: Added line.
+  DiffChange = { fg = cp.orange._1000 },  -- Diff mode: Changed line.
+  DiffDelete = { fg = cp.red._600 },  -- Diff mode: Deleted line.
+  DiffText = { fg = cp.orange._1000, bold = true },  -- Diff mode: Changed text within a changed line.
 
   -- Miscellaneous highlights.
-  ColorColumn = { bg = cp.gray._700 },                             -- Used for the columns set with `colorcolumn`.
-  EndOfBuffer = { fg = cp.gray._900 },                             -- Filler lines (~) after the end of the buffer.
-  MatchParen = { fg = cp.red._300, bold = true },                  -- Character under the cursor or just before it, if it is a paired bracket, and its match.
-  WinSeparator = { fg = cp.gray._600 },                            -- Separators between window splits.
-  FloatBorder = { fg = cp.red._300 },                              -- Floating window border.
-  Directory = { fg = cp.sky._300 },                                -- Directory names (and other special names in listings).
-  NonText = { fg = cp.gray._900 },                                 -- `@` at the end of the window, characters from `showbreak` and other characters that do not really exist in the text.
-  SpecialKey = { fg = cp.gray._50 },                               -- Unprintable characters: Text displayed differently from what it really is. But not `listchars` whitespace.
-  QuickFixLine = { fg = cp.indigo._300, bold = true },             -- Current `quickfix` item in the quickfix window. Combined with `CursorLine` when the cursor is there.
-  WhiteSpace = { fg = cp.indigo._300 },                            -- `nbsp`, `space`, `tab`, `multispace`, `lead`, and `trail` in `listchars`.
-  WildMenu  = { bg = cp.indigo._300 },                             -- Current match in `wildmenu` completion.
-
+  ColorColumn = { bg = cp.gray._100 },  -- Used for the columns set with `colorcolumn`
+  EndOfBuffer = { fg = cp.gray._50 },  -- Filler lines (~) after the end of the buffer.
+  MatchParen = { fg = cp.orange._1000, italic = true, bold = true },  -- Character under the cursor or just before it, if it is a paired bracket, and its match.
+  WinSeparator = { fg = cp.gray._600 },  -- Separators between window splits.
+  FloatBorder = { fg = cp.red._300 },  -- Floating window border. FIXME
+  Directory = { fg = cp.sky._600, bold = true },  -- Directory names (and other special names in listings).
+  NonText = { fg = cp.gray._50 },  -- `@` at the end of the window, characters from `showbreak` and other characters that do not really exist in the text.
+  SpecialKey = { fg = cp.gray._900 },  -- Unprintable characters: Text displayed differently from what it really is. But not `listchars` whitespace.
+  QuickFixLine = { fg = cp.sky._600, bold = true },  -- Current `quickfix` item in the quickfix window. Combined with `CursorLine` when the cursor is there.
+  WhiteSpace = { fg = cp.red._600 },  -- `nbsp`, `space`, `tab`, `multispace`, `lead`, and `trail` in `listchars`.
+  WildMenu  = { bg = cp.red._900 },  -- Current match in `wildmenu` completion.
 }
 
-  -- diffAdded = { fg = cp.green._300 },
-  -- diffRemoved = { fg = cp.red._300 }, -- TODO:
-  -- diffChanged = { fg = cp.amber._300 },
-  -- diffOldFile = { fg = cp.orange._300 },
-  -- diffNewFile = { fg = cp.red._300 },
-  -- diffFile = { fg = cp.sky._300 },
-  -- diffLine = { fg = cp.red._500 },
-  -- diffIndexLine = { fg = cp.pink._500 },
-
--- TODO: Side comments.
+-- TODO: Add better comments to syntax highlights.
 highlights.syntax = {
   Type = { fg = cp.blue._300, italic = true }, -- (preferred) int, long, char, etcp.
   Structure = { fg = cp.yellow._300 }, --  struct, union, enum, etcp.
