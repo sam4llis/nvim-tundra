@@ -82,6 +82,14 @@ highlights.common = {
   diffNewFile = { fg = cp.green._500 },
   diffFile = { fg = cp.sky._800 },
 
+  -- Git highlights.
+  gitHash = { fg = cp.sky._800 },
+  gitKeyword = { fg = cp.red._600 },
+  gitIdentityKeyword = { fg = cp.sky._800 },
+  gitIdentity = { fg = cp.green._500 },
+  gitEmail = { fg = cp.green._500 },
+  gitDate = { fg = cp.sky._600 },
+
   -- Miscellaneous highlights.
   ColorColumn = { bg = cp.gray._100 },  -- Used for the columns set with `colorcolumn`
   EndOfBuffer = { fg = cp.gray._50 },  -- Filler lines (~) after the end of the buffer.
