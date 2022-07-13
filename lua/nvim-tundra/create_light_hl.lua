@@ -106,39 +106,39 @@ highlights.common = {
 
 -- TODO: Add better comments to syntax highlights.
 highlights.syntax = {
-  Type = { fg = cp.blue._300, italic = true }, -- (preferred) int, long, char, etcp.
-  Structure = { fg = cp.yellow._300 }, --  struct, union, enum, etcp.
-  StorageClass = { fg = cp.yellow._300 }, -- static, register, volatile, etcp.
-  Identifier = { fg = cp.violet._200 },
-  Constant = { fg = cp.gray._200 },
-  PreProc = { fg = cp.pink._300 },
-  PreCondit = {fg = cp.white },
-  Include = { fg = cp.pink._300 },
-  Keyword = { fg = cp.red._300 },
-  Define = { fg = cp.white },
-  Typedef = { fg = cp.red._300, italic = true }, --  A typedef
-  Exception = { fg = cp.blue._900 },
-  Conditional = { fg = cp.rose._200 },
-  Repeat = { fg = cp.rose._200 },
-  Statement = { fg = cp.red._300 },
-  Macro = { fg = cp.rose._200 },
-  Error = { fg = cp.red._300 },
-  Label = { fg = cp.red._300 },
-  Special = { fg = cp.blue._300 }, -- (preferred) any special symbol
-  SpecialChar = { fg = cp.blue._300 },
-  Boolean = { fg = cp.rose._200, bold = true, italic = true },
-  String = { fg = cp.blue._200 },
-  Character = { fg = cp.red._300 },
-  Number = { fg = cp.sky._100 },
+  Type = { fg = cp.black, italic = true },  -- (preferred) int, long, char, etcp.
+  Structure = { fg = cp.sky._600 },  --  struct, union, enum, etcp. py: except BaseException
+  StorageClass = { fg = cp.sky._600 },  -- static, register, volatile, etcp. fugitive untracked ?
+  Identifier = { fg = cp.sky._900 },  -- dictonary entries in lua tables, fugitive hash identifier
+  Constant = { fg = cp.orange._1000, bold = true },  -- M. in Lua files
+  PreProc = { fg = cp.sky._800 },  -- netrw main.py*
+  PreCondit = {fg = cp.red._600, bold = true },  -- fugitive untracked header
+  Include = { fg = cp.sky._600 },  -- import statements
+  Keyword = { fg = cp.red._600 },  -- function, end, local
+  Define = { fg = cp.sky._600, bold = true },  -- python '@'decorator
+  Typedef = { fg = cp.sky._600 },  --  A typedef, fugitive M staged
+  Exception = { fg = cp.sky._800 },  -- python: try raise
+  Conditional = { fg = cp.sky._800 },  -- python: if else
+  Repeat = { fg = cp.red._800 },   -- python: for
+  Statement = { fg = cp.red._600 },  -- python: def, return, as
+  Macro = { fg = cp.sky._600, bold = true },  -- fugitive unstaged heading
+  Error = { fg = cp.black },  -- FIXME
+  Label = { fg = cp.sky._600 },  -- fugitive top labels
+  Special = { fg = cp.gray._600, italic = true },  -- FIXME (preferred) any special symbol, \n \r in python strings + brackets in lua tables
+  SpecialChar = { fg = cp.black },  -- FIXME
+  Boolean = { fg = cp.orange._1000, bold = true, italic = true },
+  String = { fg = cp.green._500 },
+  Character = { fg = cp.black },
+  Number = { fg = cp.sky._600, bold = true },  -- python: x = 2
   Float = { fg = cp.sky._100 },
-  Function = { fg = cp.blue._300, bold = true },
-  Operator = { fg = cp.rose._200 },
-  Title = { fg = cp.blue._300 }, -- Titles for output from `:set all`, `autocmd` etc.
-  Tag = { fg = cp.sky._300, bold = true },
-  Delimiter = { fg = cp.gray._50 }, -- Delimiters (e.g., commas in a Lua table).
-  Comment = { fg = cp.gray._500, italic = true }, -- Comments.
-  SpecialComment = { fg = cp.red._900, italic = true }, -- Special comments.
-  Todo = { fg = cp.green._300 },
+  Function = { fg = cp.sky._600, bold = true, italic = true },  -- className, functionName
+  Operator = { fg = cp.sky._800 },  -- python in (i.e., for _ in _)
+  Title = { fg = cp.gray._600 },  -- Titles for output from `:set all`, `autocmd` etc. Number of windows in a tab
+  Tag = { fg = cp.sky._600, bold = true },  -- fugitive g?
+  Delimiter = { fg = cp.gray._900 },  -- Delimiters (e.g., commas in a Lua table).
+  Comment = { fg = cp.gray._500, italic = true },  -- Comments.
+  SpecialComment = { fg = cp.red._900, italic = true },  -- Special comments.
+  Todo = { fg = cp.orange._1000 },
 }
 
 -- TODO: Create local variables to link some TS and native HLGroups.
