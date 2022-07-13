@@ -221,19 +221,19 @@ highlights.plugins.diagnostic = {
 
   -- Diagnostic virtual text.
   DiagnosticVirtualTextError = { fg = cp.red._400, italic = true }, -- DiagnosticError: TODO: Link to one variable?
-  DiagnosticVirtualTextWarn = { fg = cp.orange._300, italic = true },
+  DiagnosticVirtualTextWarn = { fg = cp.orange._500, italic = true },
   DiagnosticVirtualTextInfo = { fg = cp.sky._300, italic = true },
   DiagnosticVirtualTextHint = { fg = cp.indigo._300, italic = true },
 
   -- Underlining diagnostics.
   DiagnosticUnderlineError = { fg = cp.red._400, underline = true },
-  DiagnosticUnderlineWarn = { fg = cp.orange._300, underline = true },
+  DiagnosticUnderlineWarn = { fg = cp.orange._500, underline = true },
   DiagnosticUnderlineInfo = { fg = cp.sky._300, underline = true },
   DiagnosticUnderlineHint = { fg = cp.indigo._300, underline = true },
 
   -- Signs in sign column.
   DiagnosticSignError = { fg = cp.red._400 },
-  DiagnosticSignWarn = { fg = cp.orange._300 },
+  DiagnosticSignWarn = { fg = cp.orange._500 },
   DiagnosticSignInfo = { fg = cp.sky._300 },
   DiagnosticSignHint = { fg = cp.indigo._300 },
 
