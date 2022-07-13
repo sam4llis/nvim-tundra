@@ -259,10 +259,37 @@ highlights.plugins.telescope = {
   TelescopePreviewTitle = { fg = cp.gray._100, bg = cp.gray._100 },
 }
 
-  TelescopePromptPrefix = { fg = cp.sky._300 },
-  TelescopePromptNormal = { bg = cp.gray._875 },
-  TelescopeResultsNormal = { bg = cp.gray._975 },
-  TelescopePreviewNormal = { bg = cp.gray._1000 },
+highlights.plugins.fugitive = {
+  -- Header section.
+  FugitiveHeader = { fg = cp.sky._700 },
+  fugitiveSymbolicRef = { fg = cp.sky._800, bold = true, italic = true },
+  FugitiveHelpHeader = { fg = cp.sky._700 },
+  FugitiveHelpTag = { fg = cp.sky._800, bold = true, italic = true },
+
+  -- Untracked section.
+  fugitiveUntrackedHeading = { fg = cp.red._600, bold = true },
+  fugitiveUntrackedModifier = { fg = cp.red._600 },
+  fugitiveUntrackedSection = {},
+
+  -- Unstaged section.
+  FugitiveUnstagedHeading = { fg = cp.sky._600, bold = true },
+  FugitiveUnstagedModifier = { fg = cp.red._600 },
+  FugitiveUnstagedSection = {},
+
+  -- Staged section.
+  FugitiveStagedHeading = { fg = cp.sky._600, bold = true },
+  FugitiveStagedModifier = { fg = cp.green._500 },
+  FugitiveStagedSection = {},
+
+  -- Unpushed section.
+  fugitiveHeading = { fg = cp.sky._800, bold = true },
+  fugitiveSection = {},
+  fugitiveHash = { fg = cp.sky._900 },
+
+  -- Miscellaneous.
+  FugitiveCount = { fg = cp.sky._600, bold = true },
+  FugitiveHunk = { fg = cp.gray._500 },
+}
 
   TelescopePromptBorder = { fg = cp.gray._875, bg = cp.gray._875 },
   TelescopeResultsBorder = { fg = cp.gray._975, bg = cp.gray._975 },
