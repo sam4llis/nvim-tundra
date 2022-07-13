@@ -159,6 +159,29 @@ local cp = {
     _900 = "#881337",
   },
 
+  gitsigns = {
+    green = {
+      numhl = "#DCFFE4",-- "#DBFFE3",
+      linehl = "#F0FFF4",
+      inlinehl = "#28a745",
+    },
+    red = {
+      numhl = "#ffdce0",
+      linehl = "#ffeef0",
+      inlinehl = "black",--"#d73a49",
+    },
+    orange = {
+      numhl = "#ffebda",
+      linehl = "#fff8f2",
+      inlinehl = "#f66a0a",
+    },
+    blue = {
+      numhl = "#BDDEFF",
+      linehl = "#DDF4FF",
+      inlinehl = "#0366d6", -- FIXME: Is this used?
+    },
+  },
+
 }
 
 return cp

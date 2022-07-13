@@ -291,13 +291,31 @@ highlights.plugins.fugitive = {
   FugitiveHunk = { fg = cp.gray._500 },
 }
 
-  TelescopePromptBorder = { fg = cp.gray._875, bg = cp.gray._875 },
-  TelescopeResultsBorder = { fg = cp.gray._975, bg = cp.gray._975 },
-  TelescopePreviewBorder = { fg = cp.gray._1000, bg = cp.gray._1000 },
+highlights.plugins.gitsigns = {
+  GitSignsAdd = { fg = cp.gray._900, bg = cp.gitsigns.green.numhl },
+  GitSignsChange = { fg = cp.gray._900, bg = cp.gitsigns.orange.numhl },
+  GitSignsDelete = { fg = cp.gray._900, bg = cp.gitsigns.red.numhl },
 
-  TelescopePromptTitle = { fg = cp.gray._875, bg = cp.gray._875 },
-  TelescopeResultsTitle = { fg = cp.gray._975, bg = cp.gray._975 },
-  TelescopePreviewTitle = { fg = cp.gray._1000, bg = cp.gray._1000 },
+  -- Number highlights.
+  GitSignsAddNr = { fg = cp.gray._900, bg = cp.gitsigns.green.numhl },
+  GitSignsChangeNr = { fg = cp.gray._900, bg = cp.gitsigns.orange.numhl },
+  GitSignsDeleteNr = { fg = cp.gray._900, bg = cp.gitsigns.red.numhl },
+
+  GitSignsAddLn = { fg = cp.transparent, bg = cp.gitsigns.green.linehl },
+  GitSignsChangeLn = { fg = cp.transparent, bg = cp.gitsigns.orange.linehl },
+  GitSignsDeleteLn = { fg = cp.transparent, bg = cp.gitsigns.red.linehl },
+
+  GitSignsAddInline = { fg = cp.sky._600 },
+  GitSignsChangeInline = { fg = cp.sky._600 },
+  GitSignsDeleteInline = { fg = cp.sky._600 },
+
+  GitSignsAddLnInline = { fg = cp.gitsigns.orange.inlinehl, italic = true },
+  GitSignsChangeLnInline = { fg = cp.gitsigns.orange.inlinehl, italic = true },
+  GitSignsDeleteLnInline = { fg = cp.gitsigns.orange.inlinehl, italic = true },
+
+  GitSignsAddVirtLnInline = { fg = cp.red._100 },
+  GitSignsChangeVirtLnInline = { fg = cp.red._100 },
+  GitSignsDeleteVirtLnInline = { fg = cp.gitsigns.red.inlinehl, italic = true },
 }
 
 highlights.languages.markdown = {
