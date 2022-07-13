@@ -95,7 +95,7 @@ highlights.common = {
   EndOfBuffer = { fg = cp.gray._50 },  -- Filler lines (~) after the end of the buffer.
   MatchParen = { fg = cp.orange._1000, italic = true, bold = true },  -- Character under the cursor or just before it, if it is a paired bracket, and its match.
   WinSeparator = { fg = cp.gray._600 },  -- Separators between window splits.
-  FloatBorder = { fg = cp.red._300 },  -- Floating window border. FIXME
+  FloatBorder = { fg = cp.gray._900, bg = cp.gray._50 },  -- Floating window border.
   Directory = { fg = cp.sky._600, bold = true },  -- Directory names (and other special names in listings).
   NonText = { fg = cp.gray._50 },  -- `@` at the end of the window, characters from `showbreak` and other characters that do not really exist in the text.
   SpecialKey = { fg = cp.gray._900 },  -- Unprintable characters: Text displayed differently from what it really is. But not `listchars` whitespace.
