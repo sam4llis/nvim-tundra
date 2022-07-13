@@ -226,7 +226,22 @@ highlights.plugins.diagnostic = {
 highlights.plugins.lsp = { }
 
 highlights.plugins.telescope = {
-  TelescopeSelection = { fg = cp.sky._300 },
+  TelescopeSelection = { fg = cp.sky._800 },
+  TelescopeMatching = { fg = cp.sky._600 },
+
+  TelescopePromptPrefix = { fg = cp.sky._600 },
+  TelescopePromptNormal = { bg = cp.gray._125 },
+  TelescopeResultsNormal = { bg = cp.gray._150 },
+  TelescopePreviewNormal = { bg = cp.gray._100 },
+
+  TelescopePromptBorder = { fg = cp.gray._125, bg = cp.gray._125 },
+  TelescopeResultsBorder = { fg = cp.gray._150, bg = cp.gray._150 },
+  TelescopePreviewBorder = { fg = cp.gray._100, bg = cp.gray._100 },
+
+  TelescopePromptTitle = { fg = cp.gray._125, bg = cp.gray._125 },
+  TelescopeResultsTitle = { fg = cp.gray._150, bg = cp.gray._150 },
+  TelescopePreviewTitle = { fg = cp.gray._100, bg = cp.gray._100 },
+}
 
   TelescopePromptPrefix = { fg = cp.sky._300 },
   TelescopePromptNormal = { bg = cp.gray._875 },
