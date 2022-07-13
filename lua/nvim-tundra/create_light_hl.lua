@@ -69,10 +69,18 @@ highlights.common = {
   ErrorMsg = { fg = cp.red._600, bold = true, italic = true },  -- Error messages on the command line.
 
   -- Diff highlights.
-  DiffAdd = { fg = cp.green._500 },  -- Diff mode: Added line.
-  DiffChange = { fg = cp.orange._1000 },  -- Diff mode: Changed line.
+  DiffAdd = { fg = cp.transparent, bg = cp.gitsigns.green.numhl },  -- Diff mode: Added line.
+  DiffChange = { fg = cp.transparent, bg = cp.gitsigns.orange.numhl },  -- Diff mode: Changed line.
   DiffDelete = { fg = cp.red._600 },  -- Diff mode: Deleted line.
   DiffText = { fg = cp.orange._1000, bold = true },  -- Diff mode: Changed text within a changed line.
+  diffAdded = { fg = cp.green._500 },
+  diffRemoved = { fg = cp.red._600 },
+  diffChanged = { fg = cp.orange._1000 },
+  diffLine = { fg = cp.sky._900, italic = true },
+  diffSubname = { fg = cp.sky._800, bold = true, italic = true },
+  diffOldFile = { fg = cp.red._600 },
+  diffNewFile = { fg = cp.green._500 },
+  diffFile = { fg = cp.sky._800 },
 
   -- Miscellaneous highlights.
   ColorColumn = { bg = cp.gray._100 },  -- Used for the columns set with `colorcolumn`
