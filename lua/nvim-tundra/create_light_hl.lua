@@ -109,7 +109,7 @@ highlights.syntax = {
   Type = { fg = cp.black, italic = true },  -- (preferred) int, long, char, etcp.
   Structure = { fg = cp.sky._600 },  --  struct, union, enum, etcp. py: except BaseException
   StorageClass = { fg = cp.sky._600 },  -- static, register, volatile, etcp. fugitive untracked ?
-  Identifier = { fg = cp.sky._900 },  -- dictonary entries in lua tables, fugitive hash identifier
+  Identifier = { fg = cp.sky._800 },  -- dictonary entries in lua tables, fugitive hash identifier
   Constant = { fg = cp.orange._1000, bold = true },  -- M. in Lua files
   PreProc = { fg = cp.sky._800 },  -- netrw main.py*
   PreCondit = {fg = cp.red._600, bold = true },  -- fugitive untracked header
