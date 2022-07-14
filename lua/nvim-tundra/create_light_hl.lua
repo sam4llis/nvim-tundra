@@ -14,8 +14,8 @@ highlights.common = {
   NormalFloat = { fg = cp.gray._900, bg = cp.gray._200 },  -- Normal text in floating windows.
 
   -- Fold and sign column highlights.
-  Folded = { fg = cp.sky._600, bg = cp.gray._50 },  -- Line used for closed folds.
-  FoldColumn = { fg = cp.sky._600, bg = cp.gray._50 },  -- The `foldcolumn`.
+  Folded = { fg = cp.sky.light, bg = cp.gray._50 },  -- Line used for closed folds.
+  FoldColumn = { fg = cp.sky.light, bg = cp.gray._50 },  -- The `foldcolumn`.
   SignColumn = { fg = cp.gray._200, bg = cp.gray._50 },  -- Column where signs are displayed.
 
   -- Cursor highlights.
@@ -31,18 +31,18 @@ highlights.common = {
 
   -- Line number highlights.
   LineNr = { fg = cp.gray._500 },  -- Line number for `:number` and `:#` commands, and when `number` or `relativenumber` option is set. //FIXME:
-  CursorLineNr = { fg = cp.sky._600 },  -- Like LineNr when `cursorline` is set and `cursorlineopt` contains `number` or is `both`, for the cursor line.
+  CursorLineNr = { fg = cp.sky.light },  -- Like LineNr when `cursorline` is set and `cursorlineopt` contains `number` or is `both`, for the cursor line.
 
   -- Popup menu highlights.
-  Pmenu = { fg = cp.sky._600, bg = cp.gray._200},  -- Popup menu: Normal item.
-  PmenuSel = { fg = cp.sky._600, bg = cp.gray._300, bold = true },  -- Popup menu: Selected item.
+  Pmenu = { fg = cp.sky.light, bg = cp.gray._200},  -- Popup menu: Normal item.
+  PmenuSel = { fg = cp.sky.light, bg = cp.gray._300, bold = true },  -- Popup menu: Selected item.
   PmenuSbar = { bg = cp.gray_300 },  -- Popup menu: Scrollbar.
-  PmenuThumb = { bg = cp.sky._600 },  -- Popup menu: Thumb of the scrollbar.
-  Question = { fg = cp.sky._600 },  -- `hit-enter` prompt and yes/no questions.
+  PmenuThumb = { bg = cp.sky.light },  -- Popup menu: Thumb of the scrollbar.
+  Question = { fg = cp.sky.light },  -- `hit-enter` prompt and yes/no questions.
 
   -- `showmode` highlights.
-  ModeMsg = { fg = cp.sky._600, bold = true },  -- `showmode' message (e.g., "-- INSERT --").
-  MsgArea = { fg = cp.sky._600 },  -- Area for messages and cmdline.
+  ModeMsg = { fg = cp.sky.light, bold = true },  -- `showmode' message (e.g., "-- INSERT --").
+  MsgArea = { fg = cp.sky.light },  -- Area for messages and cmdline.
   MsgSeparator = {},  -- Separator for scrolled messages, `mgsep` flag of `display`.
 
   -- Search/substitution highlights.
@@ -55,40 +55,40 @@ highlights.common = {
 
   Tabline = { bg = cp.gray._100 },  -- Tab pages line, not active tab page label.
   TabLineFill = { bg = cp.gray._100 },  -- Tab pages line, where there are no labels.
-  TabLineSel = { fg = cp.sky._600, bg = cp.gray._100 },  -- Tab pages line, active tab page label.
+  TabLineSel = { fg = cp.sky.light, bg = cp.gray._100 },  -- Tab pages line, active tab page label.
 
   -- Spelling highlights.
   -- FIXME
-  SpellBad = { sp = cp.red._600, underline = true },  -- Word that is not recognised by the spellchecker.
-  SpellCap = { sp = cp.yellow._600, underline = true },  -- Word that should start with a capital.
+  SpellBad = { sp = cp.red.light, underline = true },  -- Word that is not recognised by the spellchecker.
+  SpellCap = { sp = cp.red.light, underline = true },  -- Word that should start with a capital.
   SpellLocal = { sp = cp.sky._100, underline = true },  -- Word that is recognised by the spellchecker as one that is used in another region.
   SpellRare = { sp = cp.green._300, underline = true },  -- Word that is recognised by the spellchecker as one that is hardly ever used.
 
   -- Warning/Error message highlights.
-  WarningMsg = { fg = cp.yellow._600 },  -- Warning messages on the command line. //FIXME: Change ugly yellow warning color
-  ErrorMsg = { fg = cp.red._600, bold = true, italic = true },  -- Error messages on the command line.
+  WarningMsg = { fg = cp.red.light },  -- Warning messages on the command line.
+  ErrorMsg = { fg = cp.red.light, bold = true, italic = true },  -- Error messages on the command line.
 
   -- Diff highlights.
   DiffAdd = { fg = cp.transparent, bg = cp.gitsigns.green.numhl },  -- Diff mode: Added line.
   DiffChange = { fg = cp.transparent, bg = cp.gitsigns.orange.numhl },  -- Diff mode: Changed line.
-  DiffDelete = { fg = cp.red._600 },  -- Diff mode: Deleted line.
+  DiffDelete = { fg = cp.red.light },  -- Diff mode: Deleted line.
   DiffText = { fg = cp.orange._1000, bold = true },  -- Diff mode: Changed text within a changed line.
-  diffAdded = { fg = cp.green._500 },
-  diffRemoved = { fg = cp.red._600 },
+  diffAdded = { fg = cp.green.medium },
+  diffRemoved = { fg = cp.red.light },
   diffChanged = { fg = cp.orange._1000 },
   diffLine = { fg = cp.sky._900, italic = true },
-  diffSubname = { fg = cp.sky._800, bold = true, italic = true },
-  diffOldFile = { fg = cp.red._600 },
-  diffNewFile = { fg = cp.green._500 },
-  diffFile = { fg = cp.sky._800 },
+  diffSubname = { fg = cp.sky.dark, bold = true, italic = true },
+  diffOldFile = { fg = cp.red.light },
+  diffNewFile = { fg = cp.green.medium },
+  diffFile = { fg = cp.sky.dark },
 
   -- Git highlights.
-  gitHash = { fg = cp.sky._800 },
-  gitKeyword = { fg = cp.red._600 },
-  gitIdentityKeyword = { fg = cp.sky._800 },
-  gitIdentity = { fg = cp.green._500 },
-  gitEmail = { fg = cp.green._500 },
-  gitDate = { fg = cp.sky._600 },
+  gitHash = { fg = cp.sky.dark },
+  gitKeyword = { fg = cp.red.light },
+  gitIdentityKeyword = { fg = cp.sky.dark },
+  gitIdentity = { fg = cp.green.medium },
+  gitEmail = { fg = cp.green.medium },
+  gitDate = { fg = cp.sky.light },
 
   -- Miscellaneous highlights.
   ColorColumn = { bg = cp.gray._100 },  -- Used for the columns set with `colorcolumn`
@@ -96,52 +96,51 @@ highlights.common = {
   MatchParen = { fg = cp.orange._1000, italic = true, bold = true },  -- Character under the cursor or just before it, if it is a paired bracket, and its match.
   WinSeparator = { fg = cp.gray._600 },  -- Separators between window splits.
   FloatBorder = { fg = cp.gray._900, bg = cp.gray._50 },  -- Floating window border.
-  Directory = { fg = cp.sky._600, bold = true },  -- Directory names (and other special names in listings).
+  Directory = { fg = cp.sky.light, bold = true },  -- Directory names (and other special names in listings).
   NonText = { fg = cp.gray._50 },  -- `@` at the end of the window, characters from `showbreak` and other characters that do not really exist in the text.
   SpecialKey = { fg = cp.gray._900 },  -- Unprintable characters: Text displayed differently from what it really is. But not `listchars` whitespace.
-  QuickFixLine = { fg = cp.sky._600, bold = true },  -- Current `quickfix` item in the quickfix window. Combined with `CursorLine` when the cursor is there.
-  WhiteSpace = { fg = cp.red._600 },  -- `nbsp`, `space`, `tab`, `multispace`, `lead`, and `trail` in `listchars`.
+  QuickFixLine = { fg = cp.sky.light, bold = true },  -- Current `quickfix` item in the quickfix window. Combined with `CursorLine` when the cursor is there.
+  WhiteSpace = { fg = cp.red.light },  -- `nbsp`, `space`, `tab`, `multispace`, `lead`, and `trail` in `listchars`.
   WildMenu  = { bg = cp.red._900 },  -- Current match in `wildmenu` completion.
 }
 
 -- TODO: Add better comments to syntax highlights.
 highlights.syntax = {
   Type = { fg = cp.black, italic = true },  -- (preferred) int, long, char, etcp.
-  Structure = { fg = cp.sky._600 },  --  struct, union, enum, etcp. py: except BaseException
-  StorageClass = { fg = cp.sky._600 },  -- static, register, volatile, etcp. fugitive untracked ?
-  Identifier = { fg = cp.sky._800 },  -- dictonary entries in lua tables, fugitive hash identifier
+  Structure = { fg = cp.sky.light },  --  struct, union, enum, etcp. py: except BaseException
+  StorageClass = { fg = cp.sky.light },  -- static, register, volatile, etcp. fugitive untracked ?
+  Identifier = { fg = cp.sky.dark },  -- dictonary entries in lua tables, fugitive hash identifier
   Constant = { fg = cp.orange._1000, bold = true },  -- M. in Lua files
-  PreProc = { fg = cp.sky._800 },  -- netrw main.py*
-  PreCondit = {fg = cp.red._600, bold = true },  -- fugitive untracked header
-  Include = { fg = cp.sky._600 },  -- import statements
-  Keyword = { fg = cp.red._600 },  -- function, end, local
-  Define = { fg = cp.sky._600, bold = true },  -- python '@'decorator
-  Typedef = { fg = cp.sky._600 },  --  A typedef, fugitive M staged
-  Exception = { fg = cp.sky._800 },  -- python: try raise
-  Conditional = { fg = cp.sky._800 },  -- python: if else
-  Repeat = { fg = cp.red._800 },   -- python: for
-  Statement = { fg = cp.red._600 },  -- python: def, return, as
-  Macro = { fg = cp.sky._600, bold = true },  -- fugitive unstaged heading
+  PreProc = { fg = cp.sky.dark },  -- netrw main.py*
+  PreCondit = {fg = cp.red.light, bold = true },  -- fugitive untracked header
+  Include = { fg = cp.sky.light },  -- import statements
+  Keyword = { fg = cp.red.light },  -- function, end, local
+  Define = { fg = cp.sky.light, bold = true },  -- python '@'decorator
+  Typedef = { fg = cp.sky.light },  --  A typedef, fugitive M staged
+  Exception = { fg = cp.sky.dark },  -- python: try raise
+  Conditional = { fg = cp.sky.dark },  -- python: if else
+  Repeat = { fg = cp.red.dark },   -- python: for
+  Statement = { fg = cp.red.light },  -- python: def, return, as
+  Macro = { fg = cp.sky.light, bold = true },  -- fugitive unstaged heading
   Error = { fg = cp.black },  -- FIXME
-  Label = { fg = cp.sky._600 },  -- fugitive top labels
+  Label = { fg = cp.sky.light },  -- fugitive top labels
   Special = { fg = cp.gray._600, italic = true },  -- FIXME (preferred) any special symbol, \n \r in python strings + brackets in lua tables
   SpecialChar = { fg = cp.black },  -- FIXME
   Boolean = { fg = cp.orange._1000, bold = true, italic = true },
-  String = { fg = cp.green._500 },
+  String = { fg = cp.green.medium },
   Character = { fg = cp.black },
-  Number = { fg = cp.sky._600, bold = true },  -- python: x = 2
+  Number = { fg = cp.sky.light, bold = true },  -- python: x = 2
   Float = { fg = cp.sky._100 },
-  Function = { fg = cp.sky._600, bold = true, italic = true },  -- className, functionName
-  Operator = { fg = cp.sky._800 },  -- python in (i.e., for _ in _)
+  Function = { fg = cp.sky.light, bold = true, italic = true },  -- className, functionName
+  Operator = { fg = cp.sky.dark },  -- python in (i.e., for _ in _)
   Title = { fg = cp.gray._600 },  -- Titles for output from `:set all`, `autocmd` etc. Number of windows in a tab
-  Tag = { fg = cp.sky._600, bold = true },  -- fugitive g?
+  Tag = { fg = cp.sky.light, bold = true },  -- fugitive g?
   Delimiter = { fg = cp.gray._900 },  -- Delimiters (e.g., commas in a Lua table).
   Comment = { fg = cp.gray._500, italic = true },  -- Comments.
   SpecialComment = { fg = cp.red._900, italic = true },  -- Special comments.
   Todo = { fg = cp.orange._1000 },
 }
 
--- TODO: Create local variables to link some TS and native HLGroups.
 highlights.plugins.treesitter = {
   TSAttribute = { fg = cp.red._900 },
   TSBoolean = { fg = '#FBC19D', bold = true, italic = true },
@@ -242,10 +241,10 @@ highlights.plugins.diagnostic = {
 highlights.plugins.lsp = { }
 
 highlights.plugins.telescope = {
-  TelescopeSelection = { fg = cp.sky._800 },
-  TelescopeMatching = { fg = cp.sky._600 },
+  TelescopeSelection = { fg = cp.sky.dark },
+  TelescopeMatching = { fg = cp.sky.light },
 
-  TelescopePromptPrefix = { fg = cp.sky._600 },
+  TelescopePromptPrefix = { fg = cp.sky.light },
   TelescopePromptNormal = { bg = cp.gray._125 },
   TelescopeResultsNormal = { bg = cp.gray._150 },
   TelescopePreviewNormal = { bg = cp.gray._100 },
@@ -261,33 +260,33 @@ highlights.plugins.telescope = {
 
 highlights.plugins.fugitive = {
   -- Header section.
-  FugitiveHeader = { fg = cp.sky._700 },
-  fugitiveSymbolicRef = { fg = cp.sky._800, bold = true, italic = true },
-  FugitiveHelpHeader = { fg = cp.sky._700 },
-  FugitiveHelpTag = { fg = cp.sky._800, bold = true, italic = true },
+  FugitiveHeader = { fg = cp.sky.medium },
+  fugitiveSymbolicRef = { fg = cp.sky.dark, bold = true, italic = true },
+  FugitiveHelpHeader = { fg = cp.sky.medium },
+  FugitiveHelpTag = { fg = cp.sky.dark, bold = true, italic = true },
 
   -- Untracked section.
-  fugitiveUntrackedHeading = { fg = cp.red._600, bold = true },
-  fugitiveUntrackedModifier = { fg = cp.red._600 },
+  fugitiveUntrackedHeading = { fg = cp.red.light, bold = true },
+  fugitiveUntrackedModifier = { fg = cp.red.light },
   fugitiveUntrackedSection = {},
 
   -- Unstaged section.
-  FugitiveUnstagedHeading = { fg = cp.sky._600, bold = true },
-  FugitiveUnstagedModifier = { fg = cp.red._600 },
+  FugitiveUnstagedHeading = { fg = cp.sky.light, bold = true },
+  FugitiveUnstagedModifier = { fg = cp.red.light },
   FugitiveUnstagedSection = {},
 
   -- Staged section.
-  FugitiveStagedHeading = { fg = cp.sky._600, bold = true },
-  FugitiveStagedModifier = { fg = cp.green._500 },
+  FugitiveStagedHeading = { fg = cp.sky.light, bold = true },
+  FugitiveStagedModifier = { fg = cp.green.medium },
   FugitiveStagedSection = {},
 
   -- Unpushed section.
-  fugitiveHeading = { fg = cp.sky._800, bold = true },
+  fugitiveHeading = { fg = cp.sky.dark, bold = true },
   fugitiveSection = {},
   fugitiveHash = { fg = cp.sky._900 },
 
   -- Miscellaneous.
-  FugitiveCount = { fg = cp.sky._600, bold = true },
+  FugitiveCount = { fg = cp.sky.light, bold = true },
   FugitiveHunk = { fg = cp.gray._500 },
 }
 
@@ -305,9 +304,9 @@ highlights.plugins.gitsigns = {
   GitSignsChangeLn = { fg = cp.transparent, bg = cp.gitsigns.orange.linehl },
   GitSignsDeleteLn = { fg = cp.transparent, bg = cp.gitsigns.red.linehl },
 
-  GitSignsAddInline = { fg = cp.sky._600 },
-  GitSignsChangeInline = { fg = cp.sky._600 },
-  GitSignsDeleteInline = { fg = cp.sky._600 },
+  GitSignsAddInline = { fg = cp.sky.light },
+  GitSignsChangeInline = { fg = cp.sky.light },
+  GitSignsDeleteInline = { fg = cp.sky.light },
 
   GitSignsAddLnInline = { fg = cp.gitsigns.orange.inlinehl, italic = true },
   GitSignsChangeLnInline = { fg = cp.gitsigns.orange.inlinehl, italic = true },
