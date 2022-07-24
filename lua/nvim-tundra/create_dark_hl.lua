@@ -159,7 +159,7 @@ highlights.plugins.treesitter = {
   TSKeywordReturn = { fg = cp.indigo._200 }, --return, yield
   TSLabel = { fg = cp.indigo._300 }, -- Vim documentation titles
   TSMethod = { fg = cp.sky._200 }, -- x.conjugate()
-  TSNamespace = { fg = cp.red._900 },
+  TSNamespace = { fg = cp.red._300 },
   TSNumber = { fg = cp.orange._300 }, -- numeros
   TSOperator = { fg = cp.gray._50 }, -- equals, add, minus
   TSParameter = { fg = cp.red._100 }, -- foo(BAR, BAZ)
@@ -184,7 +184,7 @@ highlights.plugins.treesitter = {
   TSUnderline = { fg = cp.red._900 },
   TSStrike = { fg = cp.red._900 },
   TSTitle = { fg = cp.indigo._300 },
-  TSLiteral = { fg = cp.red._900 },
+  TSLiteral = { fg = cp.red._300 },
   TSURI = { fg = cp.sky._300, underline = true },
   TSMath = { fg = cp.red._900 }, -- latex math
   TSTextReference = { fg = cp.indigo._200 }, -- footnotes, citations
