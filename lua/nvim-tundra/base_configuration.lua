@@ -1,5 +1,6 @@
 local base_configuration = {
   plugins = {
+    telescope = true,
     treesitter = true,
   },
 }
