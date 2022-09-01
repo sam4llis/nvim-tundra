@@ -1,2 +1,5 @@
 # Ignore Vim sessions.
 Session.vim
+
+# Ignore .DS_Store
+.DS_Store
