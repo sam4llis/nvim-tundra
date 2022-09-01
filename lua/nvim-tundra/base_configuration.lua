@@ -1,5 +1,6 @@
 local base_configuration = {
   plugins = {
+    cmp = true,
     telescope = true,
     treesitter = true,
   },
