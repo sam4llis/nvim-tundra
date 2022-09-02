@@ -15,8 +15,8 @@ local base_configuration = {
     numbers = {},
     operators = {},
     punctuation = {},
-    types = {},
     strings = {},
+    types = {},
   },
   diagnostics = {
     errors = {},
