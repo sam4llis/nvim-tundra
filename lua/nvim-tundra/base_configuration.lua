@@ -1,5 +1,9 @@
 local base_configuration = {
   transparent_background = false,
+  editor = {
+    search = {},
+    substitute = {},
+  },
   syntax = {
     booleans = {},
     comments = {},

@@ -39,10 +39,10 @@ M.map = function(ss, opts)
     QuickFixLine = { link = 'CursorLine' }, -- Current `quickfix` item in the quickfix window. Combined with `hl-CursorLine` when the cursor is there.
 
     -- Search/substitution highlights.
-    Search = { fg = ss.bg.normal, bg = ss.diagnostics.information, bold = true }, -- Last search pattern.
-    IncSearch = { fg = ss.bg.normal, bg = ss.diagnostics.hint, bold = true }, -- `incsearch` highlighting; also used for the text replaced with ':s///c'.
+    Search = vim.tbl_extend('force', { fg = ss.bg.normal, bg = ss.diagnostics.information, bold = true }, opts.editor.search), -- Last search pattern.
+    IncSearch = vim.tbl_extend('force', { fg = ss.bg.normal, bg = ss.diagnostics.hint, bold = true }, opts.editor.search), -- `incsearch` highlighting; also used for the text replaced with ':s///c'.
     CurSearch = { link = 'IncSearch' }, -- Used for highlighting a search pattern under the cursor (see `hlsearch`).
-    Substitute = { fg = ss.bg.normal, bg = ss.diagnostics.error }, -- Substitute replacement text.
+    Substitute = vim.tbl_extend('force', { fg = ss.bg.normal, bg = ss.diagnostics.error, bold = true }, opts.editor.substitute), -- Substitute replacement text.
 
     -- Statusline highlights.
     StatusLine   = { fg = ss.fg.statusline, bg = opts.transparent_background and ss.bg.transparent or ss.bg.normal }, -- Status line of current window.
