@@ -9,7 +9,7 @@ M.setup = function(user_opts)
 end
 
 M.load = function()
-  local opts = vim.g.tundra_opts
+  local opts = vim.g.tundra_opts or base_configuration
 
   -- If the global variable `tundra_biome` is not set, then respect the user's background colour.
   if vim.g.tundra_biome == nil then
