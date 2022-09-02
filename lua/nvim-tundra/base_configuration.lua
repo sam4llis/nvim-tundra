@@ -13,6 +13,12 @@ local base_configuration = {
     types = {},
     strings = {},
   },
+  diagnostics = {
+    errors = {},
+    warnings = {},
+    information = {},
+    hints = {},
+  },
   plugins = {
     cmp = true,
     context = true,
