@@ -25,12 +25,12 @@ local base_configuration = {
     hints = {},
   },
   plugins = {
-    cmp = true,
-    context = true,
-    gitsigns = true,
     lsp = true,
-    telescope = true,
     treesitter = true,
+    cmp = false,
+    context = false,
+    gitsigns = false,
+    telescope = false,
   },
 }
 
