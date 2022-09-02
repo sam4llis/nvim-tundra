@@ -16,6 +16,7 @@ stylesheet.bg = {
   cursorline = cp.gray._800, -- Cursorline background.
   cursor = cp.white, -- Cursor background.
   visual = cp.gray._700, -- Visual selection background.
+  transparent = cp.transparent,
 }
 
 stylesheet.syntax = {

@@ -1,4 +1,5 @@
 local base_configuration = {
+  transparent_background = false,
   syntax = {
     booleans = {},
     comments = {},

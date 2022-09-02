@@ -4,12 +4,12 @@ M.map = function(ss, opts)
   return {
 
     -- Normal text highlights.
-    Normal = { fg = ss.fg.normal, bg = ss.bg.normal }, -- Current window.
-    NormalNC = { fg = ss.fg.normal, bg = ss.bg.normal }, -- Non-current window.
+    Normal = { fg = ss.fg.normal, bg = opts.transparent_background and ss.bg.transparent or ss.bg.normal }, -- Current window.
+    NormalNC = { fg = ss.fg.normal, bg = opts.transparent_background and ss.bg.transparent or ss.bg.normal }, -- Non-current window.
     NormalFloat = { fg = ss.fg.normal, bg = ss.bg.floating }, -- Floating window.
 
     -- Fold and sign column highlights.
-    Folded = { fg = ss.fg.conceal, bg = ss.bg.floating }, -- Line used for closed folds.
+    Folded = { fg = ss.fg.conceal, bg = opts.transparent_background and ss.bg.transparent or ss.bg.floating }, -- Line used for closed folds.
     FoldColumn = { fg = ss.fg.conceal }, -- The `foldcolumn`.
     SignColumn = { fg = ss.fg.conceal }, -- Column where signs are displayed.
 
@@ -45,8 +45,8 @@ M.map = function(ss, opts)
     Substitute = { fg = ss.bg.normal, bg = ss.diagnostics.error }, -- Substitute replacement text.
 
     -- Statusline highlights.
-    StatusLine   = { fg = ss.fg.statusline, bg = ss.bg.normal }, -- Status line of current window.
-    StatusLineNC = { fg = ss.fg.normal, bg = ss.bg.normal }, -- Status lines of not-current windows Note: if this is equal to 'StatusLine' Vim will use '^^^' in the status line of the current window.
+    StatusLine   = { fg = ss.fg.statusline, bg = opts.transparent_background and ss.bg.transparent or ss.bg.normal }, -- Status line of current window.
+    StatusLineNC = { fg = ss.fg.normal, bg = opts.transparent_background and ss.bg.transparent or ss.bg.normal }, -- Status lines of not-current windows Note: if this is equal to 'StatusLine' Vim will use '^^^' in the status line of the current window.
 
     -- Tabline highlights.
     TabLine     = { fg = ss.fg.statusline, bg = ss.bg.normal }, -- Tab pages line, not active tab page label.
