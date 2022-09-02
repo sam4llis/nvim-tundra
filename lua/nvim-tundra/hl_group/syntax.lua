@@ -9,7 +9,7 @@ M.map = function(ss, opts)
     Constant = vim.tbl_extend('force', { fg = ss.syntax.constant }, opts.syntax.constants),
     Debug = { link = 'Special' },
     Define = { link = 'PreProc' },
-    Delimiter = { fg = ss.syntax.punctuation },
+    Delimiter = vim.tbl_extend('force', { fg = ss.syntax.punctuation }, opts.syntax.punctuation),
     Error = { fg = ss.diagnostics.error },
     Exception = { link = 'Keyword' },
     Float = { link = 'Number' },

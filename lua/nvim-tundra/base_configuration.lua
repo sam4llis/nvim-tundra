@@ -9,6 +9,7 @@ local base_configuration = {
     loops = {},
     numbers = {},
     operators = {},
+    punctuation = {},
     types = {},
     strings = {},
   },
