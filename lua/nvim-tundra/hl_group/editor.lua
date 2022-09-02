@@ -54,8 +54,8 @@ M.map = function(ss, opts)
     TabLineSel  = { fg = ss.bg.statusline, bg = ss.bg.cursorline }, -- Tab pages line, active tab page label.
 
     -- Winbar highlights.
-    WinBar   = { fg = ss.statusline, bg = ss.bg.normal, bold = true }, -- Window bar of current window.
-    WinBarNC = { fg = ss.statusline, bg = ss.bg.floating, bold = true }, -- Window bar of not-current windows.
+    WinBar   = { fg = ss.statusline, bg = opts.transparent_background and ss.bg.transparent or ss.bg.normal, bold = true }, -- Window bar of current window.
+    WinBarNC = { fg = ss.statusline, bg = opts.transparent_background and ss.bg.transparent or ss.bg.floating, bold = true }, -- Window bar of not-current windows.
 
     -- Spelling highlights.
     -- Word that is not recognized by the spellchecker. `spell` Combined with the highlighting used otherwise.
