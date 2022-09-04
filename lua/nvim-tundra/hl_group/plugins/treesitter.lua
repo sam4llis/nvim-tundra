@@ -16,7 +16,7 @@ M.map = function(ss, opts)
     TSDefine = { link = 'Preproc' },
     TSError = { link = 'Error' },
     TSException = { link = 'Exception' },
-    TSField = { fg = ss.syntax.field },
+    TSField = vim.tbl_extend('force', { fg = ss.syntax.field }, opts.syntax.fields),
     TSFloat = { link = 'Float' },
     TSFunction = { link = 'Function' },
     TSFuncBuiltin = vim.tbl_extend('force', { fg = ss.syntax.builtin.func }, opts.syntax.functions),

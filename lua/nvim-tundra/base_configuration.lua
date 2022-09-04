@@ -9,6 +9,7 @@ local base_configuration = {
     comments = {},
     conditionals = {},
     constants = {},
+    fields = {},
     functions = {},
     keywords = {},
     loops = {},
