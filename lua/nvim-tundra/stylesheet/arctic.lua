@@ -52,10 +52,13 @@ stylesheet.diagnostics = {
 }
 
 stylesheet.diff = {
-  add = cp.green._600,
-  change = cp.indigo._600,
-  delete = cp.red._600,
-  text = cp.gray._400,
+  add = cp.green._900,
+  change = cp.indigo._900,
+  delete = {
+    fg = cp.red._800,
+    bg = cp.red._900,
+  },
+  text = cp.indigo._800,
 }
 
 stylesheet.git = {

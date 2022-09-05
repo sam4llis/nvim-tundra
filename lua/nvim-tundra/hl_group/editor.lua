@@ -99,10 +99,10 @@ M.map = function(ss, opts)
     WarningMsg = { fg = ss.diagnostics.warning }, -- Warning messages on the command line.
 
     -- Diff highlights.
-    DiffAdd = { fg = ss.bg.normal, bg = ss.diff.add }, -- Diff mode: Added line.
-    DiffChange = { fg = ss.bg.normal, bg = ss.diff.change }, -- Diff mode: Changed line.
-    DiffDelete = { fg = ss.bg.normal, bg = ss.diff.delete }, -- Diff mode: Deleted line.
-    DiffText = { fg = ss.bg.normal, bg = ss.diff.text }, -- Diff mode: Changed text within a changed line.
+    DiffAdd = { bg = ss.diff.add }, -- Diff mode: Added line.
+    DiffChange = { bg = ss.diff.change }, -- Diff mode: Changed line.
+    DiffDelete = { fg = ss.diff.delete.fg, bg = ss.diff.delete.bg }, -- Diff mode: Deleted line.
+    DiffText = { bg = ss.diff.text }, -- Diff mode: Changed text within a changed line.
 
     -- Miscellaneous highlights.
     Directory    = { fg = ss.syntax.func }, -- Directory names (and other special names in listings).
