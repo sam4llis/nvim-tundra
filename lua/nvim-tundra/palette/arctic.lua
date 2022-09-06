@@ -49,4 +49,5 @@ local cp = {
 }
 
 -- Overwrite `cp` with any user configuration colours.
-return vim.tbl_deep_extend('force', cp, vim.g.tundra_opts.overwrite.colors)
+local overwrite = vim.tbl_get(vim.g.tundra_opts or {}, 'overwrite', 'colors') or {}
+return vim.tbl_deep_extend('force', cp, overwrite)
