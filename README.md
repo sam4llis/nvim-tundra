@@ -143,6 +143,59 @@ require('nvim-tundra').setup({
 })
 ```
 
+## Customising Highlights
+
+### Get Tundra Colours
+
+This returns a Lua table, where each key is the colour name and each value is
+its hexadecimal colour. Most colours have multiple shades, so you may need to
+specify the shade of the colour you want to use. Here's a quick example:
+
+```lua
+-- Get the 'arctic' (default) colour palette.
+local cp = require('nvim-tundra.palette.arctic')
+
+-- You can view all colours/shades using the following command.
+print(vim.inspect(cp))
+
+print(vim.inspect(cp.indigo))
+-- Output: { _400 = '#DDD6FE', _500 = '#A5B4FC', _800 = '#424674', _900 = '#28304D' }
+
+print(vim.inspect(cp.indigo._500))
+-- Output: '#A5B4FC'
+```
+
+> NOTE: Colour shades are represented in Tundra palettes as a value from 0 to
+> 1000, where 0 is the lightest shade of the colour, and 1000 is the darkest
+> shade of the colour. Shades will usually increment in values of 100.
+
+### Overwriting Tundra Groups
+
+Overwriting Tundra groups is as simple as passing a new foreground (`fg`) and
+background (`bg`) colour into the correct field. For example, if you prefer
+booleans to be an `indigo` shade rather than the default `orange`, you can add
+the following to the setup configuration.
+
+```lua
+local cp = require('nvim-tundra.palette.arctic')
+
+require('nvim-tundra').setup({
+  -- ...
+  syntax = {
+    -- ...
+    booleans = { fg = cp.indigo._400, bold = true, italic = true },
+    -- ...
+  },
+  -- ...
+})
+
+vim.opt.background = 'dark'
+vim.cmd('colorscheme tundra')
+```
+
+Hexadecimal values can also be passed into `fg` and `bg` fields if you want to
+add your own colours.
+
 [nvim-0.7.0]: https://github.com/neovim/neovim/releases/tag/v0.7.0
 [nvim-nightly]: https://github.com/neovim/neovim/releases/tag/nightly
 [vim-plug]: https://github.com/junegunn/vim-plug
