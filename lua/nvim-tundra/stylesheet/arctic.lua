@@ -1,3 +1,4 @@
+package.loaded['nvim-tundra.palette.arctic'] = nil
 local cp = require('nvim-tundra.palette.arctic')
 local stylesheet = {}
 

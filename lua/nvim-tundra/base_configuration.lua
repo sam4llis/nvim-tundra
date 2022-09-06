@@ -35,6 +35,7 @@ local base_configuration = {
   },
   overwrite = {
     colors = {},
+    highlights = {},
   },
 }
 
