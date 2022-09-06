@@ -14,6 +14,7 @@ Neovim plugins. Written in Lua.
 
     * Overwrite and adjust editor/syntax highlight groups to your liking.
     * Enable/disable integrations with various plugins.
+    * Overwrite individual highlight groups and colours.
 
 * Integration with popular Neovim plugins:
 
@@ -92,6 +93,10 @@ require('nvim-tundra').setup({
     context = true,
     gitsigns = true,
     telescope = true,
+  },
+  overwrite = {
+    colors = {},
+    highlights = {},
   },
 })
 
@@ -196,6 +201,74 @@ vim.cmd('colorscheme tundra')
 
 Hexadecimal values can also be passed into `fg` and `bg` fields if you want to
 add your own colours.
+
+### Overwriting Tundra Colours
+
+If you want to change a particular colour in Tundra, you can add it to the
+`overwrite` field in the user `setup()` function. For example, if you want to
+overwrite the original `sky._500` colour to make it a custom shade of blue, add
+the following to your user configuration:
+
+```lua
+require('nvim-tundra').setup({
+  -- ...
+  overwrite = {
+    colors = {
+      sky = {
+        _500 = '#6EABCF', -- A more `oceanic` colour instead of `sky`.
+      },
+    },
+  },
+  -- ...
+})
+
+vim.opt.background = 'dark'
+vim.cmd('colorscheme tundra')
+```
+
+### Overwriting Highlight Groups
+
+If you want fine-grained control in your Tundra configuration, you can overwrite
+individual highlight groups. These highlights take precedence over
+Tundra-defined highlight groups in the `editor` and `syntax` fields in Tundra's
+`setup()` function. For example, if you wish the `TSField` highlight group to
+be bold and have a red foreground:
+
+```lua
+require('nvim-tundra').setup({
+  -- ...
+  overwrite = {
+    highlights = {
+      TSField = { fg = '#FF0000', bold = true },
+    },
+  },
+  -- ...
+})
+
+vim.opt.background = 'dark'
+vim.cmd('colorscheme tundra')
+```
+
+You can also overwrite highlight groups with colours from the Tundra colour
+palette. Here's a quick example:
+
+```lua
+local cp = require('nvim-tundra.palette.arctic')
+
+require('nvim-tundra').setup({
+  -- ...
+  overwrite = {
+    highlights = {
+      TSField = { fg = cp.red._400, bold = true},
+    },
+  },
+  -- ...
+})
+
+vim.opt.background = 'dark'
+vim.cmd('colorscheme tundra')
+```
+
 
 [nvim-0.7.0]: https://github.com/neovim/neovim/releases/tag/v0.7.0
 [nvim-nightly]: https://github.com/neovim/neovim/releases/tag/nightly
