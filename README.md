@@ -4,8 +4,8 @@ Tundra is a customisable theme for Neovim with built-in support for popular
 Neovim plugins. Written in Lua.
 
 <div align="center">
-  <img width="740" alt="telescope" src="https://user-images.githubusercontent.com/43378933/188617076-fb0f99dc-75f8-4849-a52c-d91f8d6bf743.png">
   <img width="740" alt="syntax" src="https://user-images.githubusercontent.com/43378933/188616879-5de60642-2ee2-4632-8afe-18156fb7a16f.png">
+  <img width="740" alt="telescope" src="https://user-images.githubusercontent.com/43378933/188617076-fb0f99dc-75f8-4849-a52c-d91f8d6bf743.png">
 </div>
 
 ## Features
