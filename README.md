@@ -100,7 +100,8 @@ vim.cmd('colorscheme tundra')
 ```
 
 > NOTE: The `setup()` function must be invoked before `colorscheme tundra` for
-> the user's settings to be respected.
+> the user's settings to be respected. You can also remove empty tables `{}` if
+> you don't want to overwrite a default setting.
 
 ### General Settings
 
