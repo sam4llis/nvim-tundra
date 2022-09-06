@@ -33,6 +33,9 @@ local base_configuration = {
     gitsigns = false,
     telescope = false,
   },
+  overwrite = {
+    colors = {},
+  },
 }
 
 return base_configuration
