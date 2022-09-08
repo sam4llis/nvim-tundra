@@ -11,7 +11,7 @@ M.map = function(ss, opts)
     TSConstant = { link = 'Constant' },
     TSConstBuiltin = vim.tbl_extend('force', { fg = ss.syntax.builtin.const }, opts.syntax.constants),
     TSConstMacro = { link = 'Macro' },
-    TSConstructor = { link = 'Delimiter' },
+    TSConstructor = { link = 'Function' },
     TSDebug = { link = 'Debug' },
     TSDefine = { link = 'Preproc' },
     TSError = { link = 'Error' },
