@@ -19,13 +19,6 @@ M.load = function()
   -- Fetch the correct stylesheet using the defined global variable.
   local stylesheet = require('nvim-tundra.stylesheet.' .. vim.g.tundra_biome)
 
-  for plugin, enabled in pairs(opts.plugins) do
-    if enabled then
-      local hl_group = require('nvim-tundra.hl_group.plugins.' .. plugin).map(stylesheet, opts)
-      M.set_hl(hl_group)
-    end
-  end
-
   local base_highlights = {
     syntax = require('nvim-tundra.hl_group.syntax').map(stylesheet, opts),
     editor = require('nvim-tundra.hl_group.editor').map(stylesheet, opts),
@@ -34,6 +27,14 @@ M.load = function()
   for _, hl in pairs(base_highlights) do
     M.set_hl(hl)
   end
+
+  for plugin, enabled in pairs(opts.plugins) do
+    if enabled then
+      local hl_group = require('nvim-tundra.hl_group.plugins.' .. plugin).map(stylesheet, opts)
+      M.set_hl(hl_group)
+    end
+  end
+
 end
 
 M.set_hl = function(hl_group)
