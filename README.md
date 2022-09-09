@@ -37,7 +37,7 @@ Neovim plugins. Written in Lua.
 
 ### Installation
 
-You can install this extension with your favourite package manager. As an
+You can install this colorscheme with your favourite package manager. As an
 example, for [vim-plug]:
 
 ```vim
