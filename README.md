@@ -24,6 +24,7 @@ Neovim plugins. Written in Lua.
     * [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
     * [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
     * [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+    * [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
 
 ## Getting Started
 
@@ -91,6 +92,7 @@ require('nvim-tundra').setup({
     treesitter = true,
     cmp = true,
     context = true,
+    dbui = true,
     gitsigns = true,
     telescope = true,
   },

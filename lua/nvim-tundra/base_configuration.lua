@@ -30,6 +30,7 @@ local base_configuration = {
     treesitter = true,
     cmp = false,
     context = false,
+    dbui = false,
     gitsigns = false,
     telescope = false,
   },
