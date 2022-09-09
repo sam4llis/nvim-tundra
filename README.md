@@ -10,30 +10,30 @@ Neovim plugins. Written in Lua.
 
 ## Features
 
-* Extensible user configuration with Tundra's `setup()` function.
+- Extensible user configuration with Tundra's `setup()` function.
 
-    * Overwrite and adjust editor/syntax highlight groups to your liking.
-    * Enable/disable integrations with various plugins.
-    * Overwrite individual highlight groups and colours.
+  - Overwrite and adjust editor/syntax highlight groups to your liking.
+  - Enable/disable integrations with various plugins.
+  - Overwrite individual highlight groups and colours.
 
-* Integration with popular Neovim plugins:
+- Integration with popular Neovim plugins:
 
-    * [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-    * [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-    * [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context)
-    * [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-    * [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-    * [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-    * [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
+  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+  - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+  - [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context)
+  - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+  - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+  - [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
 
 ## Getting Started
 
 ### Requirements
 
-* [Neovim (v0.7.0)](nvim-0.7.0) or the latest [Neovim (Nightly)](nvim-nightly)
+- [Neovim (v0.7.0)](nvim-0.7.0) or the latest [Neovim (Nightly)](nvim-nightly)
   is required.
 
-* A terminal with true colour support is required.
+- A terminal with true colour support is required.
 
 ### Installation
 
@@ -114,23 +114,20 @@ vim.cmd('colorscheme tundra')
 
 General settings are independent to any syntax, editor, or plugin group.
 
-* `transparent_background` (boolean): If true, background colours are disabled
+- `transparent_background` (boolean): If true, background colours are disabled
   on certain highlight groups to give a transparent background.
 
 ### Syntax Settings
 
 Syntax settings provide a simple interface to overwrite styles for syntactic
-elements, such as booleans or functions. Each field can accept any key from `:h
-highlight-args` as a boolean. Syntax settings are conventionally used to add
+elements, such as booleans or functions. Each field can accept any key from `:h highlight-args` as a boolean. Syntax settings are conventionally used to add
 `bold = true` or `inverse = true` to an element.
 
 ### Editor Settings
 
 Editor settings provide a simple interface to overwrite styles for Neovim editor
 highlights. A common use-case is to reverse the highlight arguments on the
-`search` and `substitute` fields. This is achieved by adding the `reverse =
-true` option to the respective field. Each field can accept any key from `h
-highlight-args` as a boolean.
+`search` and `substitute` fields. This is achieved by adding the `reverse = true` option to the respective field. Each field can accept any key from `h highlight-args` as a boolean.
 
 ### Plugin Settings
 
@@ -270,7 +267,6 @@ require('nvim-tundra').setup({
 vim.opt.background = 'dark'
 vim.cmd('colorscheme tundra')
 ```
-
 
 [nvim-0.7.0]: https://github.com/neovim/neovim/releases/tag/v0.7.0
 [nvim-nightly]: https://github.com/neovim/neovim/releases/tag/nightly
