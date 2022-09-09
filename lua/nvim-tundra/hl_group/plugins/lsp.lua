@@ -2,9 +2,9 @@ local M = {}
 
 M.map = function(ss, opts)
   return {
-    LspReferenceText = { bg = ss.bg.colorcolumn },
-    LspReferenceRead = { bg = ss.bg.colorcolumn },
-    LspReferenceWrite = { bg = ss.bg.colorcolumn },
+    LspReferenceText = { bg = ss.diagnostics.reference },
+    LspReferenceRead = { bg = ss.diagnostics.reference },
+    LspReferenceWrite = { bg = ss.diagnostics.reference },
 
     LspCodeLens = { fg = ss.syntax.comment }, -- Used to color the virtual text of the codelens.
     LspCodeLensSeparator = { fg = ss.bg.cursorline }, -- Used to color the separator between two or more code lenses.

@@ -50,6 +50,7 @@ stylesheet.diagnostics = {
   warning = cp.orange._500,
   information = cp.indigo._500,
   hint = cp.green._500,
+  reference = cp.gray._750,
 }
 
 stylesheet.diff = {
