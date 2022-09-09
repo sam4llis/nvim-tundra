@@ -268,6 +268,17 @@ vim.opt.background = 'dark'
 vim.cmd('colorscheme tundra')
 ```
 
+## Acknowledgements
+
+- The [Catppuccin](https://github.com/catppuccin/nvim) colorscheme for Neovim,
+  for inspiring the extensible user configuration options for Tundra.
+
+- The [Nightfox](https://github.com/EdenEast/nightfox.nvim) colorscheme for
+  Neovim, for inspiring the distinction between colors and palettes for Tundra.
+
+- The [NvChad](https://github.com/NvChad/NvChad) configuration, for inspiring
+  the UI and highlight groups for [Telescope](https://github.com/nvim-telescope/telescope.nvim).
+
 [nvim-0.7.0]: https://github.com/neovim/neovim/releases/tag/v0.7.0
 [nvim-nightly]: https://github.com/neovim/neovim/releases/tag/nightly
 [vim-plug]: https://github.com/junegunn/vim-plug
