@@ -1,5 +1,9 @@
 local base_configuration = {
   transparent_background = false,
+  dim_inactive_windows = {
+    enabled = false,
+    color = nil,
+  },
   editor = {
     search = {},
     substitute = {},

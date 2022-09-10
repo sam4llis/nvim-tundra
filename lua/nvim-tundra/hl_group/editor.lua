@@ -5,7 +5,7 @@ M.map = function(ss, opts)
 
     -- Normal text highlights.
     Normal = { fg = ss.fg.normal, bg = opts.transparent_background and ss.bg.transparent or ss.bg.normal }, -- Current window.
-    NormalNC = { fg = ss.fg.normal, bg = opts.transparent_background and ss.bg.transparent or ss.bg.normal }, -- Non-current window.
+    NormalNC = { fg = ss.fg.normal, bg = (opts.dim_inactive_windows.enabled and (opts.dim_inactive_windows.color or ss.bg.dimmed)) or (opts.transparent_background and ss.bg.transparent) or ss.bg.normal }, -- Non-current windows.
     NormalFloat = { fg = ss.fg.normal, bg = ss.bg.floating }, -- Floating window.
 
     -- Fold and sign column highlights.
