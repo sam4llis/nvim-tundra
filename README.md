@@ -63,6 +63,10 @@ example, this is my personal configuration for the Tundra colorscheme:
 ```lua
 require('nvim-tundra').setup({
   transparent_background = false,
+  dim_inactive_windows = {
+    enabled = false,
+    color = nil,
+  },
   editor = {
     search = {},
     substitute = {},
@@ -116,6 +120,16 @@ General settings are independent to any syntax, editor, or plugin group.
 
 - `transparent_background` (boolean): If true, background colours are disabled
   on certain highlight groups to give a transparent background.
+
+- `dim_inactive_windows` (table).
+
+  - `enabled` (boolean): If `true`, the background colour of non-current windows
+    are dimmed. Defaults to `false`.
+
+  - `color` (string | nil): A hexadecimal colour value (e.g., `'#FFFFFF'`) or
+    keyword (e.g., `'red'`) which can be used to manually override the default
+    colour of dimmed windows. If this value is `nil`, then the built-in colour for
+    dimmed windows will be used (`gray._950`). Defaults to `nil`.
 
 ### Syntax Settings
 
