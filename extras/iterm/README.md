@@ -1,4 +1,4 @@
-# iTerm-2 Theme
+# iTerm-2 Theme for Tundra
 
 ## Installation Instructions
 
