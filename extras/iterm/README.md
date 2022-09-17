@@ -4,7 +4,7 @@
 
 - Launch iTerm-2.
 
-- Type `command` + `i` (`⌘ i`).
+- Type `command` + `i` (`⌘i`).
 
 - Navigate to the **Colors** tab in the popup window.
 
