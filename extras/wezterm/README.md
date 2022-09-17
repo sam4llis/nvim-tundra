@@ -8,14 +8,14 @@
 - As an example, your wezterm configuration file should look similar to the
   following code:
 
-```lua
-local wezterm = require('wezterm')
+  ```lua
+  local wezterm = require('wezterm')
 
-return {
-  -- ...
-  colors = {
-    -- Tundra colours from `wezterm.lua` here ...
-  },
-  -- ...
-}
-```
+  return {
+    -- ...
+    colors = {
+      -- Tundra colours from `wezterm.lua` here ...
+    },
+    -- ...
+  }
+  ```
