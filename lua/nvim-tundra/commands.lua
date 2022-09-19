@@ -14,6 +14,12 @@ M.toggle_dim = function(opts)
   })
 end
 
+M.toggle_transparency = function(opts)
+  require('nvim-tundra').setup({
+    transparent_background = not vim.tbl_get(vim.g.tundra_opts, 'transparent_background')
+  })
+end
+
 -- A function to pick the theme used by nvim-tundra. The argument must equal a
 -- key in the `biomes` table (e.g., 'light') or a value in the `biomes` table
 -- (e.g., 'alpine') to work. Can be called using the Tundra command line
@@ -63,7 +69,7 @@ vim.api.nvim_create_user_command('Tundra',
         function(value)
           return vim.startswith(value, line)
         end,
-        vim.tbl_values(vim.tbl_extend('force', biomes, { 'light', 'dark', 'toggle_dim' }))
+        vim.tbl_values(vim.tbl_extend('force', biomes, { 'light', 'dark', 'toggle_dim', 'toggle_transparency' }))
       )
     end,
   }
