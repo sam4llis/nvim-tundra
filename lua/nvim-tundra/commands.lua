@@ -23,5 +23,15 @@ vim.api.nvim_create_user_command('Tundra',
 
     vim.cmd('colorscheme tundra')
   end,
-  { nargs = 1 }
+  {
+    nargs = 1,
+    complete = function(line)
+      return vim.tbl_filter(
+        function(value)
+          return vim.startswith(value, line)
+        end,
+        vim.tbl_values(biomes)
+      )
+    end,
+  }
 )
