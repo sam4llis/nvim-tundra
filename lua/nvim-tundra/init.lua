@@ -5,7 +5,7 @@ local base_configuration = require('nvim-tundra.base_configuration')
 local biomes = require('nvim-tundra.biomes')
 
 M.setup = function(user_opts)
-  vim.g.tundra_opts = vim.tbl_deep_extend('force', base_configuration, user_opts or {})
+  vim.g.tundra_opts = vim.tbl_deep_extend('force', vim.g.tundra_opts or base_configuration, user_opts or {})
 end
 
 M.load = function()
