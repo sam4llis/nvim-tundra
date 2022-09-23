@@ -41,9 +41,9 @@ stylesheet.syntax = {
 
 stylesheet.syntax.builtin = {
   const = cp.orange._500, -- Built-in constants, e.g., `nil` in Lua.
-  func = cp.orange._500, -- Built-in functions, e.g., `print` in Lua.
-  type = cp.red._500, -- Built-in types, e.g., `i32` in Rust.
-  var = cp.orange._500, -- Language-defined variables, e.g., `self` in Python.
+  func  = cp.orange._500, -- Built-in functions, e.g., `print` in Lua.
+  type  = cp.red._500, -- Built-in types, e.g., `i32` in Rust.
+  var   = cp.orange._500, -- Language-defined variables, e.g., `self` in Python.
 }
 
 stylesheet.diagnostics = {
