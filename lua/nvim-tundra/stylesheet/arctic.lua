@@ -67,21 +67,6 @@ stylesheet.diff = {
 stylesheet.filetree = {
   bg = stylesheet.bg.floating,
   fg = stylesheet.fg.normal,
-  root = cp.orange._500,
-  folder = {
-    name = cp.indigo._500,
-    icon = cp.indigo._800,
-    open = cp.indigo._500,
-    empty = cp.indigo._500,
-  },
-  filename = {
-    normal = stylesheet.fg.normal,
-    open = cp.sky._500,
-  },
-  ignored = cp.gray._500,
-  caret = cp.orange._500,
-  statusline = { fg = stylesheet.fg.statusline, bg = stylesheet.bg.transparent },
-  symlink = cp.red._400,
   border = { bg = stylesheet.bg.normal, fg = stylesheet.bg.normal },
 }
 
