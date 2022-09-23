@@ -65,7 +65,7 @@ stylesheet.diff = {
 }
 
 stylesheet.filetree = {
-  bg = stylesheet.bg.normal,
+  bg = stylesheet.bg.floating,
   fg = stylesheet.fg.normal,
   root = cp.orange._500,
   folder = {
@@ -82,7 +82,7 @@ stylesheet.filetree = {
   caret = cp.orange._500,
   statusline = { fg = stylesheet.fg.statusline, bg = stylesheet.bg.transparent },
   symlink = cp.red._400,
-  border = { bg = cp.gray._800, fg = cp.gray._800 },
+  border = { bg = stylesheet.bg.normal, fg = stylesheet.bg.normal },
 }
 
 stylesheet.git = {
