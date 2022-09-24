@@ -32,6 +32,7 @@ local base_configuration = {
   plugins = {
     lsp = true,
     treesitter = true,
+    nvimtree = false,
     cmp = false,
     context = false,
     dbui = false,
