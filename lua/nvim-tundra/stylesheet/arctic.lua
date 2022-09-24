@@ -64,12 +64,6 @@ stylesheet.diff = {
   text = cp.indigo._800,
 }
 
-stylesheet.filetree = {
-  bg = stylesheet.bg.floating,
-  fg = stylesheet.fg.normal,
-  border = { bg = stylesheet.bg.normal, fg = stylesheet.bg.normal },
-}
-
 stylesheet.git = {
   added = cp.green._600,
   changed = cp.orange._500,
