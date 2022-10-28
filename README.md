@@ -31,7 +31,7 @@ Neovim plugins. Written in Lua.
 
 ### Requirements
 
-- [Neovim (v0.7.0)](nvim-0.7.0) or the latest [Neovim (Nightly)](nvim-nightly)
+- [Neovim (v0.8.0)](nvim-0.8.0) or the latest [Neovim (Nightly)](nvim-nightly)
   is required.
 
 - A terminal with true colour support is required.
@@ -295,6 +295,6 @@ vim.cmd('colorscheme tundra')
 - The [NvChad](https://github.com/NvChad/NvChad) configuration, for inspiring
   the UI and highlight groups for [Telescope](https://github.com/nvim-telescope/telescope.nvim).
 
-[nvim-0.7.0]: https://github.com/neovim/neovim/releases/tag/v0.7.0
+[nvim-0.8.0]: https://github.com/neovim/neovim/releases/tag/v0.8.0
 [nvim-nightly]: https://github.com/neovim/neovim/releases/tag/nightly
 [vim-plug]: https://github.com/junegunn/vim-plug

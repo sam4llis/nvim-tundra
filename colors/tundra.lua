@@ -1,3 +1,8 @@
+if vim.version().minor < 8 then
+  vim.notify_once('[nvim-tundra] Neovim 0.8 or higher is required', vim.log.levels.ERROR)
+  return
+end
+
 -- Set `termguicolors` before loading the colorscheme.
 vim.opt.termguicolors = true
 
