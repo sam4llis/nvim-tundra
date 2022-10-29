@@ -1,0 +1,8 @@
+Catppuccin
+Lua
+Neovim
+Nightfox
+Nightly
+Tundra
+boolean
+customisable

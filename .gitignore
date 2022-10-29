@@ -3,3 +3,7 @@ Session.vim
 
 # Ignore .DS_Store
 .DS_Store
+
+# Ignore Vale packages except for Tundra vocabulary.
+.github/styles/*
+!.github/styles/Vocab/
