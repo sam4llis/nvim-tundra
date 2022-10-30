@@ -48,6 +48,14 @@ local cp = {
     _500 = '#BAE6FD',
   },
 
+  opal = {
+    _500 = '#99BBBD',
+  },
+
+  sand = {
+    _500 = '#E8D4B0',
+  },
+
 }
 
 -- Overwrite `cp` with any user configuration colours.

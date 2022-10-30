@@ -37,6 +37,7 @@
   - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
   - [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
   - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
+  - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
 ## Getting Started
 
@@ -130,6 +131,22 @@ vim.cmd('colorscheme tundra')
 > NOTE: The `setup()` function must be invoked before `colorscheme tundra` for
 > the user's settings to be respected. You can also remove empty tables `{}` if
 > you don't want to overwrite a default setting.
+
+### Special Integrations
+
+The Tundra theme for `lualine.nvim` must be manually invoked in your Neovim
+configuration. To use the Tundra theme in `lualine.nvim`, add the following to
+your Neovim configuration:
+
+```lua
+require('lualine').setup({
+  options = {
+    -- ...
+    theme = 'tundra',
+    -- ...
+  },
+})
+```
 
 ### General Settings
 
