@@ -2,13 +2,13 @@
   <img width="256" height="256" src="https://user-images.githubusercontent.com/43378933/198876241-1e4df46a-9351-4d21-9aaa-48f763486843.svg" />
   <br>
   <br>
-  <p align="center">
+  <p>
     <a href="https://github.com/sam4llis/nvim-tundra/stargazers"><img src="https://img.shields.io/github/stars/sam4llis/nvim-tundra?colorA=1F2937&colorB=A5B4FC&style=for-the-badge"></a>
     <a href="https://github.com/sam4llis/nvim-tundra/issues"><img src="https://img.shields.io/github/issues/sam4llis/nvim-tundra?colorA=1F2937&colorB=B5E8B0&style=for-the-badge"></a>
     <a href="https://github.com/sam4llis/nvim-tundra/contributors"><img src="https://img.shields.io/github/contributors/sam4llis/nvim-tundra?colorA=1F2937&colorB=FBC19D&style=for-the-badge"></a>
     <a href="https://github.com/sam4llis/nvim-tundra/network/members"><img src="https://img.shields.io/github/forks/sam4llis/nvim-tundra?colorA=1F2937&colorB=FECDD3&style=for-the-badge"></a>
   </p>
-  <p>A customisable theme for Neovim with built-in support for popular Neovim plugins. Written in Lua.</p>
+  <p>A customisable theme for Neovim with support for popular Neovim plugins. Written in Lua.</p>
   <hr>
 </section>
 
