@@ -1,7 +1,18 @@
-# Tundra
+<section align="center">
+  <img width="256" height="256" src="https://user-images.githubusercontent.com/43378933/198876241-1e4df46a-9351-4d21-9aaa-48f763486843.svg" />
+  <br>
+  <br>
+  <p align="center">
+    <a href="https://github.com/sam4llis/nvim-tundra/stargazers"><img src="https://img.shields.io/github/stars/sam4llis/nvim-tundra?colorA=1F2937&colorB=A5B4FC&style=for-the-badge"></a>
+    <a href="https://github.com/sam4llis/nvim-tundra/issues"><img src="https://img.shields.io/github/issues/sam4llis/nvim-tundra?colorA=1F2937&colorB=B5E8B0&style=for-the-badge"></a>
+    <a href="https://github.com/sam4llis/nvim-tundra/contributors"><img src="https://img.shields.io/github/contributors/sam4llis/nvim-tundra?colorA=1F2937&colorB=FBC19D&style=for-the-badge"></a>
+    <a href="https://github.com/sam4llis/nvim-tundra/network/members"><img src="https://img.shields.io/github/forks/sam4llis/nvim-tundra?colorA=1F2937&colorB=FECDD3&style=for-the-badge"></a>
+  </p>
+  <p>A customisable theme for Neovim with built-in support for popular Neovim plugins. Written in Lua.</p>
+  <hr>
+</section>
 
-Tundra is a customisable theme for Neovim with built-in support for popular
-Neovim plugins. Written in Lua.
+## Gallery
 
 <div align="center">
   <img width="740" alt="syntax" src="https://user-images.githubusercontent.com/43378933/188616879-5de60642-2ee2-4632-8afe-18156fb7a16f.png">
@@ -294,6 +305,9 @@ vim.cmd('colorscheme tundra')
 
 - The [NvChad](https://github.com/NvChad/NvChad) configuration, for inspiring
   the UI and highlight groups for [Telescope](https://github.com/nvim-telescope/telescope.nvim).
+
+- Logo inspired from the artist
+  [RNH](https://www.shutterstock.com/g/roctopus29).
 
 [nvim-0.8.0]: https://github.com/neovim/neovim/releases/tag/v0.8.0
 [nvim-nightly]: https://github.com/neovim/neovim/releases/tag/nightly
