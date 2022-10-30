@@ -1,6 +1,15 @@
 local M = {}
 
 M.map = function(ss, opts)
+
+  if vim.version().minor < 8 then
+    vim.notify_once(
+      '[nvim-tundra] nvim-treesitter integration requires Neovim 0.8 or higher. Use nvim-tundra v0.1.0 or disable the nvim-treesitter integration in your `setup()` table to avoid this message.'
+      , vim.log.levels.WARN
+    )
+    return
+  end
+
   return {
     -- Punctuation.
     ['@punct.delimiter'] = { link = 'Delimiter' },

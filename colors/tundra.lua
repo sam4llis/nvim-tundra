@@ -1,5 +1,5 @@
-if vim.version().minor < 8 then
-  vim.notify_once('[nvim-tundra] Neovim 0.8 or higher is required', vim.log.levels.ERROR)
+if vim.version().minor < 7 then
+  vim.notify_once('[nvim-tundra] Neovim 0.7 or higher is required.', vim.log.levels.ERROR)
   return
 end
 

@@ -42,10 +42,14 @@
 
 ### Requirements
 
-- [Neovim (v0.8.0)](nvim-0.8.0) or the latest [Neovim (Nightly)](nvim-nightly)
-  is required.
+- [Neovim (v0.7.0)](nvim-0.7.0) or higher is required.
 
 - A terminal with true colour support is required.
+
+> **Note**
+> Some plugin integrations require a higher version of Neovim (v0.7.0). A
+> warning message is displayed if a plugin integration is enabled which your
+> Neovim version doesn't support.
 
 ### Installation
 

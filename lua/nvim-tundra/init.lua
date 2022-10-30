@@ -38,7 +38,7 @@ M.load = function()
 end
 
 M.set_hl = function(hl_group)
-  for k, v in pairs(hl_group) do
+  for k, v in pairs(hl_group or {}) do
     local overwrite = vim.tbl_get(vim.g.tundra_opts or {}, 'overwrite', 'highlights', k) or {}
     vim.api.nvim_set_hl(0, k, vim.tbl_extend('force', v, overwrite))
   end
