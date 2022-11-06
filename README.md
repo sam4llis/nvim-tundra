@@ -63,7 +63,7 @@
   - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
   - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
-## Getting Started
+## Getting started
 
 ### Requirements
 
@@ -156,7 +156,7 @@ vim.cmd('colorscheme tundra')
 > the user's settings to be respected. You can also remove empty tables `{}` if
 > you don't want to overwrite a default setting.
 
-### Special Integrations
+### Special integrations
 
 The Tundra theme for `lualine.nvim` must be manually invoked in your Neovim
 configuration. To use the Tundra theme in `lualine.nvim`, add the following to
@@ -172,7 +172,7 @@ require('lualine').setup({
 })
 ```
 
-### General Settings
+### General settings
 
 General settings are independent to any syntax, editor, or plugin group.
 
@@ -189,19 +189,19 @@ General settings are independent to any syntax, editor, or plugin group.
     colour of dimmed windows. If this value is `nil`, then the built-in colour for
     dimmed windows will be used (`gray._950`). Defaults to `nil`.
 
-### Syntax Settings
+### Syntax settings
 
 Syntax settings provide a simple interface to overwrite styles for syntactic
 elements, such as booleans or functions. Each field can accept any key from `:h highlight-args` as a boolean. Syntax settings are conventionally used to add
 `bold = true` or `inverse = true` to an element.
 
-### Editor Settings
+### Editor settings
 
 Editor settings provide a simple interface to overwrite styles for Neovim editor
 highlights. A common use-case is to reverse the highlight arguments on the
 `search` and `substitute` fields. This is achieved by adding the `reverse = true` option to the respective field. Each field can accept any key from `h highlight-args` as a boolean.
 
-### Plugin Settings
+### Plugin settings
 
 Plugin settings provide a simple interface to add semantic highlights for
 specific plugins. By default, all plugins are disabled except for native LSP and
@@ -220,9 +220,9 @@ require('nvim-tundra').setup({
 })
 ```
 
-## Customising Highlights
+## Customising highlights
 
-### Get Tundra Colours
+### Get Tundra colours
 
 This returns a Lua table, where each key is the colour name and each value is
 its hexadecimal colour. Most colours have multiple shades, so you may need to
@@ -246,7 +246,7 @@ print(vim.inspect(cp.indigo._500))
 > 1000, where 0 is the lightest shade of the colour, and 1000 is the darkest
 > shade of the colour. Shades will usually increment in values of 100.
 
-### Overwriting Tundra Groups
+### Overwriting Tundra groups
 
 Overwriting Tundra groups is as simple as passing a new foreground (`fg`) and
 background (`bg`) colour into the correct field. For example, if you prefer
@@ -273,7 +273,7 @@ vim.cmd('colorscheme tundra')
 Hexadecimal values can also be passed into `fg` and `bg` fields if you want to
 add your own colours.
 
-### Overwriting Tundra Colours
+### Overwriting Tundra colours
 
 If you want to change a particular colour in Tundra, you can add it to the
 `overwrite` field in the user `setup()` function. For example, if you want to
@@ -297,7 +297,7 @@ vim.opt.background = 'dark'
 vim.cmd('colorscheme tundra')
 ```
 
-### Overwriting Highlight Groups
+### Overwriting highlight groups
 
 If you want fine-grained control in your Tundra configuration, you can overwrite
 individual highlight groups. These highlights take precedence over
