@@ -12,12 +12,36 @@
   <hr>
 </section>
 
-## Gallery
+<br>
 
-<div align="center">
-  <img width="740" alt="syntax" src="https://user-images.githubusercontent.com/43378933/188616879-5de60642-2ee2-4632-8afe-18156fb7a16f.png">
-  <img width="740" alt="telescope" src="https://user-images.githubusercontent.com/43378933/188617076-fb0f99dc-75f8-4849-a52c-d91f8d6bf743.png">
-</div>
+<table align="center">
+  <tr>
+    <td>
+      <img width="767" alt="lua" src="https://user-images.githubusercontent.com/43378933/200200134-518d715a-bc26-4863-baa4-c3126a2213f3.png">
+    </td>
+    <td>
+      <img width="767" alt="python" src="https://user-images.githubusercontent.com/43378933/200200212-8e474493-f002-4509-a904-84cf66a77019.png">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img width="767" alt="nvimtree" src="https://user-images.githubusercontent.com/43378933/200200274-6d1834ae-f90a-450e-879e-07cb9a2383a3.png">
+    </td>
+    <td>
+      <img width="767" alt="telescope" src="https://user-images.githubusercontent.com/43378933/200200315-b2ad9716-6462-443b-83d1-6f6cf366d88d.png">
+    </td>
+  </tr>
+   <tr>
+    <td>
+      <img width="767" alt="cmp" src="https://user-images.githubusercontent.com/43378933/200200349-36c405ea-0441-4ca8-8a94-e731f0ee84ea.png">
+    </td>
+    <td>
+      <img width="787" alt="transparent_background" src="https://user-images.githubusercontent.com/43378933/200200389-9891f364-eaa9-46ff-9e40-3a376b64aafd.png">
+    </td>
+  </tr>
+</table>
+
+<br>
 
 ## Features
 
