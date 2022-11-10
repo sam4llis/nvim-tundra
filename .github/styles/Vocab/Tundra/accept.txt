@@ -5,4 +5,5 @@ Nightfox
 Nightly
 Tundra
 boolean
+cmp
 customisable

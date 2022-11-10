@@ -17,26 +17,26 @@
 <table align="center">
   <tr>
     <td>
-      <img width="767" alt="lua" src="https://user-images.githubusercontent.com/43378933/200200134-518d715a-bc26-4863-baa4-c3126a2213f3.png">
+      <img width="767" alt="Lua" src="https://user-images.githubusercontent.com/43378933/200200134-518d715a-bc26-4863-baa4-c3126a2213f3.png">
     </td>
     <td>
-      <img width="767" alt="python" src="https://user-images.githubusercontent.com/43378933/200200212-8e474493-f002-4509-a904-84cf66a77019.png">
+      <img width="767" alt="Python" src="https://user-images.githubusercontent.com/43378933/200200212-8e474493-f002-4509-a904-84cf66a77019.png">
     </td>
   </tr>
   <tr>
     <td>
-      <img width="767" alt="nvimtree" src="https://user-images.githubusercontent.com/43378933/200200274-6d1834ae-f90a-450e-879e-07cb9a2383a3.png">
+      <img width="767" alt="nvim-tree" src="https://user-images.githubusercontent.com/43378933/200200274-6d1834ae-f90a-450e-879e-07cb9a2383a3.png">
     </td>
     <td>
-      <img width="767" alt="telescope" src="https://user-images.githubusercontent.com/43378933/200200315-b2ad9716-6462-443b-83d1-6f6cf366d88d.png">
+      <img width="767" alt="telescope.nvim" src="https://user-images.githubusercontent.com/43378933/200200315-b2ad9716-6462-443b-83d1-6f6cf366d88d.png">
     </td>
   </tr>
    <tr>
     <td>
-      <img width="767" alt="cmp" src="https://user-images.githubusercontent.com/43378933/200200349-36c405ea-0441-4ca8-8a94-e731f0ee84ea.png">
+      <img width="767" alt="nvim-cmp" src="https://user-images.githubusercontent.com/43378933/200200349-36c405ea-0441-4ca8-8a94-e731f0ee84ea.png">
     </td>
     <td>
-      <img width="787" alt="transparent_background" src="https://user-images.githubusercontent.com/43378933/200200389-9891f364-eaa9-46ff-9e40-3a376b64aafd.png">
+      <img width="787" alt="Transparent background" src="https://user-images.githubusercontent.com/43378933/200200389-9891f364-eaa9-46ff-9e40-3a376b64aafd.png">
     </td>
   </tr>
 </table>
