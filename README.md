@@ -72,16 +72,17 @@
 [tundra-v0.1.0]: https://github.com/sam4llis/nvim-tundra/releases/tag/v0.1.0
 [iterm2]: https://iterm2.com
 
-### Installation
+## Installation
 
-You can install this colorscheme with your favourite package manager. As an
-example, for [vim-plug]:
+Install Tundra with your favourite package manager.
 
-```vim
-Plug 'sam4llis/nvim-tundra'
+```lua
+use 'sam4llis/nvim-tundra' -- packer.nvim
 ```
 
-[vim-plug]: https://github.com/junegunn/vim-plug
+```vim
+Plug 'sam4llis/nvim-tundra' " vim-plug
+```
 
 ## Usage
 
