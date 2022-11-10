@@ -98,9 +98,10 @@ vim.cmd('colorscheme tundra')
 
 ## Configuration
 
-Tundra provides a `setup(opts)` function that allow you to overwrite any default
-settings. User settings are passed into the setup function as a Lua table. As an
-example, this is my personal configuration for the Tundra colorscheme:
+Tundra provides a `setup` function to overwrite default settings. Omitted fields
+in the `setup` function default to their respective default configuration
+setting. The creator of Tundra recommends the following configuration as a
+starting point:
 
 ```lua
 require('nvim-tundra').setup({
@@ -118,6 +119,7 @@ require('nvim-tundra').setup({
     comments = { bold = true, italic = true },
     conditionals = {},
     constants = { bold = true },
+    fields = {},
     functions = {},
     keywords = {},
     loops = {},
@@ -136,7 +138,7 @@ require('nvim-tundra').setup({
   plugins = {
     lsp = true,
     treesitter = true,
-    nvimtree = false,
+    nvimtree = true,
     cmp = true,
     context = true,
     dbui = true,
@@ -153,9 +155,12 @@ vim.opt.background = 'dark'
 vim.cmd('colorscheme tundra')
 ```
 
-> NOTE: The `setup()` function must be invoked before `colorscheme tundra` for
-> the user's settings to be respected. You can also remove empty tables `{}` if
-> you don't want to overwrite a default setting.
+You must invoke the `setup` function before the `:colorscheme tundra` command to
+respect your configuration settings.
+
+> **Note**
+> You can also emit empty tables and `nil` fields if you want to inherit its
+> respective default setting.
 
 ### Special integrations
 
