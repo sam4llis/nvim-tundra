@@ -3,6 +3,7 @@ Lua
 Neovim
 Nightfox
 Nightly
+RNH
 Tundra
 boolean
 cmp

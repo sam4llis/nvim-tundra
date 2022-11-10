@@ -45,23 +45,11 @@
 
 ## Features
 
-- Extensible user configuration with Tundra's `setup()` function.
+- Extensible user configuration.
 
-  - Overwrite and adjust editor/syntax highlight groups to your liking.
-  - Enable/disable integrations with various plugins.
-  - Overwrite individual highlight groups and colours.
+- Integration with [popular Vim/Neovim plugins](#supported-plugins).
 
-- Integration with popular Neovim plugins:
-
-  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-  - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-  - [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context)
-  - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
-  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-  - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
-  - [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
-  - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
-  - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- Change [configuration settings on the fly](#tundra-commands) with the `:Tundra` command.
 
 ## Getting started
 
@@ -339,6 +327,18 @@ require('nvim-tundra').setup({
 vim.opt.background = 'dark'
 vim.cmd('colorscheme tundra')
 ```
+
+## Supported plugins
+
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [nvim-treesitter-context](https://github.com/nvim-treesitter/nvim-treesitter-context)
+- [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
+- [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
+- [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
 ## Acknowledgements
 
