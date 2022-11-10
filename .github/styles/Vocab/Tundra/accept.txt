@@ -1,6 +1,6 @@
 Catppuccin
 Lua
-Neovim
+[Nn]eovim
 Nightfox
 Nightly
 RNH

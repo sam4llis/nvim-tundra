@@ -51,18 +51,26 @@
 
 - Change [configuration settings on the fly](#tundra-commands) with the `:Tundra` command.
 
-## Getting started
+## Requirements
 
-### Requirements
-
-- [Neovim (v0.7.0)](nvim-0.7.0) or higher is required.
-
-- A terminal with true colour support is required.
+- Neovim [v0.7.0][nvim-v0.7.0] or higher.
 
 > **Note**
-> Some plugin integrations require a higher version of Neovim (v0.7.0). A
-> warning message is displayed if a plugin integration is enabled which your
-> Neovim version doesn't support.
+> Some plugin integrations require Neovim v0.8. If your Neovim version doesn't
+> support a plugin integration, Tundra displays a warning message when enabling
+> that integration. Use Neovim [v0.8.0][nvim-v0.8.0] or higher, or downgrade to
+> Tundra [v0.1.0][tundra-v0.1.0] to avoid warning messages.
+
+- A terminal with true colour support.
+
+> **Note**
+> The default macOS terminal doesn't support true colour. Use a terminal that
+> supports true colour such as [iTerm2][iterm2].
+
+[nvim-v0.7.0]: https://github.com/neovim/neovim/releases/tag/v0.7.0
+[nvim-v0.8.0]: https://github.com/neovim/neovim/releases/tag/v0.8.0
+[tundra-v0.1.0]: https://github.com/sam4llis/nvim-tundra/releases/tag/v0.1.0
+[iterm2]: https://iterm2.com
 
 ### Installation
 
@@ -72,6 +80,8 @@ example, for [vim-plug]:
 ```vim
 Plug 'sam4llis/nvim-tundra'
 ```
+
+[vim-plug]: https://github.com/junegunn/vim-plug
 
 ## Usage
 
@@ -353,7 +363,3 @@ vim.cmd('colorscheme tundra')
 
 - Logo inspired from the artist
   [RNH](https://www.shutterstock.com/g/roctopus29).
-
-[nvim-0.8.0]: https://github.com/neovim/neovim/releases/tag/v0.8.0
-[nvim-nightly]: https://github.com/neovim/neovim/releases/tag/nightly
-[vim-plug]: https://github.com/junegunn/vim-plug
