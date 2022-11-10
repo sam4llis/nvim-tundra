@@ -55,7 +55,7 @@
 
 - Neovim [v0.7.0][nvim-v0.7.0] or higher.
 
-> **Note**
+> **Note**:
 > Some plugin integrations require Neovim v0.8. If your Neovim version doesn't
 > support a plugin integration, Tundra displays a warning message when enabling
 > that integration. Use Neovim [v0.8.0][nvim-v0.8.0] or higher, or downgrade to
@@ -63,7 +63,7 @@
 
 - A terminal with true colour support.
 
-> **Note**
+> **Note**:
 > The default macOS terminal doesn't support true colour. Use a terminal that
 > supports true colour such as [iTerm2][iterm2].
 
@@ -158,7 +158,7 @@ vim.cmd('colorscheme tundra')
 You must invoke the `setup` function before the `:colorscheme tundra` command to
 respect your configuration settings.
 
-> **Note**
+> **Note**:
 > You can also emit empty tables and `nil` fields if you want to inherit its
 > respective default setting.
 
