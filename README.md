@@ -162,21 +162,27 @@ respect your configuration settings.
 > You can also emit empty tables and `nil` fields if you want to inherit its
 > respective default setting.
 
+<!-- vale off -->
 ### Special integrations
+<!-- vale on -->
 
-The Tundra theme for `lualine.nvim` must be manually invoked in your Neovim
-configuration. To use the Tundra theme in `lualine.nvim`, add the following to
-your Neovim configuration:
+<details>
+  <summary>lualine.nvim</summary>
+  <br>
 
-```lua
-require('lualine').setup({
-  options = {
-    -- ...
-    theme = 'tundra',
-    -- ...
-  },
-})
-```
+  To use the Tundra integration for `lualine.nvim`, add the following to your
+  Neovim configuration:
+
+  ```lua
+  require('lualine').setup({
+    options = {
+      -- ...
+      theme = 'tundra',
+      -- ...
+    },
+  })
+  ```
+</details>
 
 ### General settings
 
