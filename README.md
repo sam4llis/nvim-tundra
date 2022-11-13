@@ -184,22 +184,22 @@ respect your configuration settings.
   ```
 </details>
 
+## Settings
+
 ### General settings
 
-General settings are independent to any syntax, editor, or plugin group.
+- `transparent_background` (boolean): If true, certain highlight groups inherit
+  a transparent background. Defaults to `false`.
 
-- `transparent_background` (boolean): If true, background colours are disabled
-  on certain highlight groups to give a transparent background.
+- `dim_inactive_windows` (table)
 
-- `dim_inactive_windows` (table).
+  - `enabled` (boolean): If true, non-current windows inherit the background
+    colour `color`. Defaults to `false`.
 
-  - `enabled` (boolean): If `true`, the background colour of non-current windows
-    are dimmed. Defaults to `false`.
-
-  - `color` (string | nil): A hexadecimal colour value (e.g., `'#FFFFFF'`) or
-    keyword (e.g., `'red'`) which can be used to manually override the default
-    colour of dimmed windows. If this value is `nil`, then the built-in colour for
-    dimmed windows will be used (`gray._950`). Defaults to `nil`.
+  - `color` (string | nil): A hexadecimal colour value (`'#FFFFFF'`) or keyword
+    (`'red'`) that the background of non-current windows inherits. If `nil`,
+    non-current windows use the default colour for dimmed windows (`gray._950`).
+    Defaults to `nil`.
 
 ### Syntax settings
 
