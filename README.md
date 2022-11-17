@@ -51,6 +51,8 @@
 
 - Change [configuration settings on the fly](#tundra-commands) with the `:Tundra` command.
 
+<br>
+
 ## Requirements
 
 - Neovim [v0.7.0][nvim-v0.7.0] or higher.
@@ -72,6 +74,8 @@
 [tundra-v0.1.0]: https://github.com/sam4llis/nvim-tundra/releases/tag/v0.1.0
 [iterm2]: https://iterm2.com
 
+<br>
+
 ## Installation
 
 Install Tundra with your favourite package manager.
@@ -84,6 +88,8 @@ use 'sam4llis/nvim-tundra' -- packer.nvim
 Plug 'sam4llis/nvim-tundra' " vim-plug
 ```
 
+<br>
+
 ## Usage
 
 To use the Tundra's [default configuration][configuration], add the following
@@ -95,6 +101,8 @@ vim.cmd('colorscheme tundra')
 ```
 
 [configuration]: https://github.com/sam4llis/nvim-tundra/blob/main/lua/nvim-tundra/base_configuration.lua
+
+<br>
 
 ## Configuration
 
@@ -184,6 +192,8 @@ respect your configuration settings.
   ```
 </details>
 
+<br>
+
 ## Settings
 
 ### General
@@ -241,6 +251,8 @@ specific elements. Each field within these subtables can accept any key from
 - A common use-case for the `diagnostic` subtable involves changing the
   foreground or background colour of diagnostic groups using the respective
   `fg = '<HEX_VALUE>'` or `bg = '<HEX_VALUE>'` flags.
+
+<br>
 
 ## Customising highlights
 
@@ -362,6 +374,8 @@ vim.opt.background = 'dark'
 vim.cmd('colorscheme tundra')
 ```
 
+<br>
+
 ## Supported plugins
 
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
@@ -373,6 +387,8 @@ vim.cmd('colorscheme tundra')
 - [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+
+<br>
 
 ## Acknowledgements
 
