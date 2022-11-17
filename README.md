@@ -202,15 +202,14 @@ respect your configuration settings.
 
 [colour]: https://github.com/sam4llis/nvim-tundra/blob/dev/lua/nvim-tundra/stylesheet/arctic.lua#L21
 
-### Plugin
+### Plugins
 
 The `plugins` subtable in the Tundra [setup function](#configuration) activates
 plugin-specific highlight groups for [supported plugins](#supported-plugins).
 The base configuration implicitly enables native LSP and [nvim-treesitter] by
-default. Enabling other supported plugins requires calling the `setup` function
-in a user's Neovim configuration.
+default. Enabling other supported plugins requires a `setup` function call.
 
-For example, to use the Tundra's [telescope.nvim] highlight groups:
+For example, to use Tundra's [telescope.nvim] highlight groups:
 
 ```lua
 require('nvim-tundra').setup({
