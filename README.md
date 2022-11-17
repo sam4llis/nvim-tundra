@@ -202,17 +202,23 @@ respect your configuration settings.
 
 [colour]: https://github.com/sam4llis/nvim-tundra/blob/dev/lua/nvim-tundra/stylesheet/arctic.lua#L21
 
-### Syntax settings
+### Miscellaneous
 
-Syntax settings provide a simple interface to overwrite styles for syntactic
-elements, such as booleans or functions. Each field can accept any key from `:h highlight-args` as a boolean. Syntax settings are conventionally used to add
-`bold = true` or `inverse = true` to an element.
+In the preceding [example configuration](#configuration) the `editor`, `syntax`,
+and `diagnostics` subtables provide an interface to overwrite styles for
+specific elements. Each field within these subtables can accept any key from
+`h: highlight args` as a boolean.
 
-### Editor settings
+- A common use-case for `editor` subtable involves reversing the highlight groups
+  for the `search` and `substitute` fields by adding a `reverse = true` flag to
+  the respective field.
 
-Editor settings provide a simple interface to overwrite styles for Neovim editor
-highlights. A common use-case is to reverse the highlight arguments on the
-`search` and `substitute` fields. This is achieved by adding the `reverse = true` option to the respective field. Each field can accept any key from `h highlight-args` as a boolean.
+- Conventionally, syntactic elements like booleans and functions use the `syntax`
+  subtable to add key-value pairs such as `bold = true` and `italic = true`.
+
+- A common use-case for the `diagnostic` subtable involves changing the
+  foreground or background colour of diagnostic groups using the respective
+  `fg = '<HEX_VALUE>'` or `bg = '<HEX_VALUE>'` flags.
 
 ### Plugin settings
 
