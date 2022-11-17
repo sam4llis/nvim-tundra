@@ -186,20 +186,21 @@ respect your configuration settings.
 
 ## Settings
 
-### General settings
+### General
 
 - `transparent_background` (boolean): If true, certain highlight groups inherit
   a transparent background. Defaults to `false`.
 
-- `dim_inactive_windows` (table)
+- `dim_inactive_windows` (table):
 
   - `enabled` (boolean): If true, non-current windows inherit the background
     colour `color`. Defaults to `false`.
 
-  - `color` (string | nil): A hexadecimal colour value (`'#FFFFFF'`) or keyword
-    (`'red'`) that the background of non-current windows inherits. If `nil`,
-    non-current windows use the default colour for dimmed windows (`gray._950`).
-    Defaults to `nil`.
+  - `color` (string | nil): A hexadecimal colour value or colour keyword that
+    the background of non-current windows inherits. If nil, non-current windows
+    use the [default colour][colour] for dimmed windows. Defaults to `nil`.
+
+[colour]: https://github.com/sam4llis/nvim-tundra/blob/dev/lua/nvim-tundra/stylesheet/arctic.lua#L21
 
 ### Syntax settings
 
