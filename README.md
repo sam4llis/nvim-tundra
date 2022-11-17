@@ -202,6 +202,29 @@ respect your configuration settings.
 
 [colour]: https://github.com/sam4llis/nvim-tundra/blob/dev/lua/nvim-tundra/stylesheet/arctic.lua#L21
 
+### Plugin
+
+The `plugins` subtable in the Tundra [setup function](#configuration) activates
+plugin-specific highlight groups for [supported plugins](#supported-plugins).
+The base configuration implicitly enables native LSP and [nvim-treesitter] by
+default. Enabling other supported plugins requires calling the `setup` function
+in a user's Neovim configuration.
+
+For example, to use the Tundra's [telescope.nvim] highlight groups:
+
+```lua
+require('nvim-tundra').setup({
+  -- ...
+  plugins = {
+    telescope = true,
+  },
+  -- ...
+})
+```
+
+[nvim-treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
+[telescope.nvim]: https://github.com/nvim-telescope/telescope.nvim
+
 ### Miscellaneous
 
 In the preceding [example configuration](#configuration) the `editor`, `syntax`,
@@ -219,25 +242,6 @@ specific elements. Each field within these subtables can accept any key from
 - A common use-case for the `diagnostic` subtable involves changing the
   foreground or background colour of diagnostic groups using the respective
   `fg = '<HEX_VALUE>'` or `bg = '<HEX_VALUE>'` flags.
-
-### Plugin settings
-
-Plugin settings provide a simple interface to add semantic highlights for
-specific plugins. By default, all plugins are disabled except for native LSP and
-[nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter). All other
-supported plugins must be explicitly opted in via the user's `setup()` call in
-their neovim configuration. As an example, to opt in Tundras'
-[telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) highlights:
-
-```lua
-require('nvim-tundra').setup({
-  -- ...
-  plugins = {
-    telescope = true,
-  },
-  -- ...
-})
-```
 
 ## Customising highlights
 
