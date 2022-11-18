@@ -376,6 +376,16 @@ vim.cmd('colorscheme tundra')
 
 <br>
 
+## Extras
+
+The [extras] folder of this repository contains configurations for
+**Alacritty**, **fzf**, **iTerm-2**, **WezTerm**, and **Windows Terminal**.
+To use these configurations, refer to the respective documentation.
+
+[extras]: https://github.com/sam4llis/nvim-tundra/tree/main/extras
+
+<br>
+
 ## Supported plugins
 
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)

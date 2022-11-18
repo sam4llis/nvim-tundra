@@ -9,6 +9,7 @@ Tundra
 Windows Terminal
 [Aa]lacritty
 [Nn]eovim
+[Ww]ez[Tt]erm
 boolean
 cmp
 config
@@ -19,4 +20,3 @@ multiple
 nil
 string
 table
-wezterm
