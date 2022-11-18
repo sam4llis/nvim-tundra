@@ -1,12 +1,12 @@
-# Alacritty Theme for Tundra
+# Alacritty theme for Tundra
 
-## Installation Instructions
+## Installation instructions
 
 - Add the contents inside `alacritty.yml` into your own `~/.config/alacritty/alacritty.yml` config file
 
-## Using Multiple Colorschemes
+## Using multiple themes
 
-You can also create a `colors.yml` to define multiple colorschemes:
+You can also create a `colors.yml` to define multiple themes:
 
 alacritty.yml:
 

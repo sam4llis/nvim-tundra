@@ -1,6 +1,6 @@
-# fzf Theme for Tundra
+# fzf theme for Tundra
 
-## Installation Instructions
+## Installation instructions
 
 Add the following code to your `.zshrc` configuration file:
 
