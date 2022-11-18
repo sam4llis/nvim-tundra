@@ -49,7 +49,7 @@
 
 - Integration with [popular Vim/Neovim plugins](#supported-plugins).
 
-- Change [configuration settings on the fly](#tundra-commands) with the `:Tundra` command.
+- Change [configuration settings on the fly](#command-line-sugar) with the `:Tundra` command.
 
 <br>
 
@@ -211,7 +211,7 @@ respect your configuration settings.
     use the [default colour][colour] for dimmed windows. Defaults to `nil`.
 
 > **Note**:
-> You can toggle general settings using the `:Tundra` [command line sugar](#tundra-commands).
+> You can toggle general settings using the `:Tundra` [command line sugar](#command-line-sugar).
 
 [colour]: https://github.com/sam4llis/nvim-tundra/blob/dev/lua/nvim-tundra/stylesheet/arctic.lua#L21
 
@@ -254,6 +254,19 @@ specific elements. Each field within these subtables can accept any key from
 - A common use-case for the `diagnostic` subtable involves changing the
   foreground or background colour of diagnostic groups using the respective
   `fg = '<HEX_VALUE>'` or `bg = '<HEX_VALUE>'` flags.
+
+<br>
+
+## Command line sugar
+
+You can change Tundra configuration settings in real-time using the `:Tundra`
+command.
+
+- `:Tundra toggle_transparency`: Toggles the `transparent_background` option
+  specified in the Tundra `setup` function.
+
+- `:Tundra toggle_dim`: Toggles the `dim_inactive_windows.enabled` option
+  specified in the Tundra `setup` function.
 
 <br>
 
