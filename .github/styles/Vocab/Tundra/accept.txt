@@ -20,3 +20,4 @@ multiple
 nil
 string
 table
+treesitter

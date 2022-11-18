@@ -210,6 +210,9 @@ respect your configuration settings.
     the background of non-current windows inherits. If nil, non-current windows
     use the [default colour][colour] for dimmed windows. Defaults to `nil`.
 
+> **Note**:
+> You can toggle general settings using the `:Tundra` [command line sugar](#tundra-commands).
+
 [colour]: https://github.com/sam4llis/nvim-tundra/blob/dev/lua/nvim-tundra/stylesheet/arctic.lua#L21
 
 ### Plugins
@@ -256,36 +259,12 @@ specific elements. Each field within these subtables can accept any key from
 
 ## Customising highlights
 
-### Get Tundra colours
+### Overwriting syntax groups
 
-This returns a Lua table, where each key is the colour name and each value is
-its hexadecimal colour. Most colours have multiple shades, so you may need to
-specify the shade of the colour you want to use. Here's a quick example:
-
-```lua
--- Get the 'arctic' (default) colour palette.
-local cp = require('nvim-tundra.palette.arctic')
-
--- You can view all colours/shades using the following command.
-print(vim.inspect(cp))
-
-print(vim.inspect(cp.indigo))
--- Output: { _400 = '#DDD6FE', _500 = '#A5B4FC', _800 = '#424674', _900 = '#28304D' }
-
-print(vim.inspect(cp.indigo._500))
--- Output: '#A5B4FC'
-```
-
-> NOTE: Colour shades are represented in Tundra palettes as a value from 0 to
-> 1000, where 0 is the lightest shade of the colour, and 1000 is the darkest
-> shade of the colour. Shades will usually increment in values of 100.
-
-### Overwriting Tundra groups
-
-Overwriting Tundra groups is as simple as passing a new foreground (`fg`) and
-background (`bg`) colour into the correct field. For example, if you prefer
-booleans to be an `indigo` shade rather than the default `orange`, you can add
-the following to the setup configuration.
+The `syntax` subtable in Tundra's `setup` function can accept foreground or
+background colours to overwrite syntax highlight groups. As an example, if you
+want to change boolean elements from an `orange` shade to an `indigo` shade, you
+can add the following to the `setup` function in your configuration:
 
 ```lua
 local cp = require('nvim-tundra.palette.arctic')
@@ -299,20 +278,22 @@ require('nvim-tundra').setup({
   },
   -- ...
 })
-
-vim.opt.background = 'dark'
-vim.cmd('colorscheme tundra')
 ```
 
-Hexadecimal values can also be passed into `fg` and `bg` fields if you want to
-add your own colours.
+The `fg` and `bg` flags also accept hexadecimal values if you want to add your
+own colours.
+
+> **Note**:
+> Colour shades in Tundra palettes range from `0` to `1000`. These numbers
+> represent the lightest and darkest shades of each colour. Shades typically
+> increment in values of `100`.
 
 ### Overwriting Tundra colours
 
-If you want to change a particular colour in Tundra, you can add it to the
-`overwrite` field in the user `setup()` function. For example, if you want to
-overwrite the original `sky._500` colour to make it a custom shade of blue, add
-the following to your user configuration:
+To change a particular colour in the Tundra theme, add it to the
+`overwrite.colors` subtable in the Tundra `setup` function. As an example, if
+you want to change the `sky._500` colour to a custom shade of blue, you can add
+the following to the `setup` function in your configuration:
 
 ```lua
 require('nvim-tundra').setup({
@@ -320,42 +301,21 @@ require('nvim-tundra').setup({
   overwrite = {
     colors = {
       sky = {
-        _500 = '#6EABCF', -- A more `oceanic` colour instead of `sky`.
+        _500 = '#6EABCF', -- An `ocean` colour instead of `sky`.
       },
     },
   },
   -- ...
 })
-
-vim.opt.background = 'dark'
-vim.cmd('colorscheme tundra')
 ```
 
 ### Overwriting highlight groups
 
-If you want fine-grained control in your Tundra configuration, you can overwrite
-individual highlight groups. These highlights take precedence over
-Tundra-defined highlight groups in the `editor` and `syntax` fields in Tundra's
-`setup()` function. For example, if you wish the `TSField` highlight group to
-be bold and have a red foreground:
-
-```lua
-require('nvim-tundra').setup({
-  -- ...
-  overwrite = {
-    highlights = {
-      TSField = { fg = '#FF0000', bold = true },
-    },
-  },
-  -- ...
-})
-
-vim.opt.background = 'dark'
-vim.cmd('colorscheme tundra')
-```
-
-You can also overwrite highlight groups with colours from the Tundra colour
-palette. Here's a quick example:
+To change a highlight group in the Tundra theme, add it to the
+`overwrite.highlights` subtable in the Tundra `setup` function. As an example,
+if you want to change the `@field` treesitter highlight group to have a bold and
+red foreground you can add the following to the `setup` function in your
+configuration:
 
 ```lua
 local cp = require('nvim-tundra.palette.arctic')
@@ -364,15 +324,17 @@ require('nvim-tundra').setup({
   -- ...
   overwrite = {
     highlights = {
-      TSField = { fg = cp.red._400, bold = true},
+      ['@field'] = { fg = cp.red._400, bold = true },
     },
   },
   -- ...
 })
-
-vim.opt.background = 'dark'
-vim.cmd('colorscheme tundra')
 ```
+
+> **Note**:
+> Highlights defined in the `overwrite.highlights` subtable take precedence over
+> highlights defined in the `editor` and `syntax` subtables in Tundra's `setup`
+> function.
 
 <br>
 
