@@ -167,8 +167,8 @@ You must invoke the `setup` function before the `:colorscheme tundra` command to
 respect your configuration settings.
 
 > **Note**:
-> You can also emit empty tables and `nil` fields if you want to inherit its
-> respective default setting.
+> You can omit empty tables and `nil` fields in the configuration table to
+> respect default settings.
 
 <!-- vale off -->
 ### Special integrations
