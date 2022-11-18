@@ -6,6 +6,7 @@ Nightfox
 Nightly
 RNH
 Tundra
+Windows Terminal
 [Aa]lacritty
 [Nn]eovim
 boolean

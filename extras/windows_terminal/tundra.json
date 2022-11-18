@@ -1,0 +1,27 @@
+{
+  "name": "Tundra",
+
+  "cursorColor": "#D1D5DB",
+  "selectionBackground": "#374151",
+
+  "background": "#111827",
+  "foreground": "#D1D5DB",
+
+  "black": "#6B7280",
+  "red": "#FCA5A5",
+  "green": "#B1E3AD",
+  "yellow": "#FBC19D",
+  "blue": "#BAE6FD",
+  "purple": "#DDD6FE",
+  "cyan": "#BAE6FD",
+  "white": "#D1D5DB",
+
+  "brightBlack": "#6B7280",
+  "brightRed": "#FCA5A5",
+  "brightGreen": "#B1E3AD",
+  "brightYellow": "#FBC19D",
+  "brightBlue": "#BAE6FD",
+  "brightPurple": "#DDD6FE",
+  "brightCyan": "#BAE6FD",
+  "brightWhite": "#D1D5DB"
+}
