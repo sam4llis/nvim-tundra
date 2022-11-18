@@ -259,82 +259,94 @@ specific elements. Each field within these subtables can accept any key from
 
 ## Customising highlights
 
-### Overwriting syntax groups
+<details>
+  <summary>Overwriting syntax groups</summary>
+  
+  <br>
+  
+  The `syntax` subtable in Tundra's `setup` function can accept foreground or
+  background colours to overwrite syntax highlight groups. As an example, if you
+  want to change boolean elements from an `orange` shade to an `indigo` shade, you
+  can add the following to the `setup` function in your configuration:
 
-The `syntax` subtable in Tundra's `setup` function can accept foreground or
-background colours to overwrite syntax highlight groups. As an example, if you
-want to change boolean elements from an `orange` shade to an `indigo` shade, you
-can add the following to the `setup` function in your configuration:
+  ```lua
+  local cp = require('nvim-tundra.palette.arctic')
 
-```lua
-local cp = require('nvim-tundra.palette.arctic')
-
-require('nvim-tundra').setup({
-  -- ...
-  syntax = {
+  require('nvim-tundra').setup({
     -- ...
-    booleans = { fg = cp.indigo._400, bold = true, italic = true },
+    syntax = {
+      -- ...
+      booleans = { fg = cp.indigo._400, bold = true, italic = true },
+      -- ...
+    },
     -- ...
-  },
-  -- ...
-})
-```
+  })
+  ```
 
-The `fg` and `bg` flags also accept hexadecimal values if you want to add your
-own colours.
+  The `fg` and `bg` flags also accept hexadecimal values if you want to add your
+  own colours.
 
-> **Note**:
-> Colour shades in Tundra palettes range from `0` to `1000`. These numbers
-> represent the lightest and darkest shades of each colour. Shades typically
-> increment in values of `100`.
+  > **Note**:
+  > Colour shades in Tundra palettes range from `0` to `1000`. These numbers
+  > represent the lightest and darkest shades of each colour. Shades typically
+  > increment in values of `100`.
+</details>
 
-### Overwriting Tundra colours
+<details>
+  <summary>Overwriting Tundra colours</summary>
+  
+  <br>
 
-To change a particular colour in the Tundra theme, add it to the
-`overwrite.colors` subtable in the Tundra `setup` function. As an example, if
-you want to change the `sky._500` colour to a custom shade of blue, you can add
-the following to the `setup` function in your configuration:
+  To change a particular colour in the Tundra theme, add it to the
+  `overwrite.colors` subtable in the Tundra `setup` function. As an example, if
+  you want to change the `sky._500` colour to a custom shade of blue, you can add
+  the following to the `setup` function in your configuration:
 
-```lua
-require('nvim-tundra').setup({
-  -- ...
-  overwrite = {
-    colors = {
-      sky = {
-        _500 = '#6EABCF', -- An `ocean` colour instead of `sky`.
+  ```lua
+  require('nvim-tundra').setup({
+    -- ...
+    overwrite = {
+      colors = {
+        sky = {
+          _500 = '#6EABCF', -- An `ocean` colour instead of `sky`.
+        },
       },
     },
-  },
-  -- ...
-})
-```
+    -- ...
+  })
+  ```
+</details>
 
-### Overwriting highlight groups
+<details>
+  <summary>Overwriting highlight groups</summary>
+  
+  <br>
+  
+  To change a highlight group in the Tundra theme, add it to the
+  `overwrite.highlights` subtable in the Tundra `setup` function. As an example,
+  if you want to change the `@field` treesitter highlight group to have a bold and
+  red foreground you can add the following to the `setup` function in your
+  configuration:
 
-To change a highlight group in the Tundra theme, add it to the
-`overwrite.highlights` subtable in the Tundra `setup` function. As an example,
-if you want to change the `@field` treesitter highlight group to have a bold and
-red foreground you can add the following to the `setup` function in your
-configuration:
+  ```lua
+  local cp = require('nvim-tundra.palette.arctic')
 
-```lua
-local cp = require('nvim-tundra.palette.arctic')
-
-require('nvim-tundra').setup({
-  -- ...
-  overwrite = {
-    highlights = {
-      ['@field'] = { fg = cp.red._400, bold = true },
+  require('nvim-tundra').setup({
+    -- ...
+    overwrite = {
+      highlights = {
+        ['@field'] = { fg = cp.red._400, bold = true },
+      },
     },
-  },
-  -- ...
-})
-```
+    -- ...
+  })
+  ```
 
-> **Note**:
-> Highlights defined in the `overwrite.highlights` subtable take precedence over
-> highlights defined in the `editor` and `syntax` subtables in Tundra's `setup`
-> function.
+  > **Note**:
+  > Highlights defined in the `overwrite.highlights` subtable take precedence over
+  > highlights defined in the `editor` and `syntax` subtables in Tundra's `setup`
+  > function.
+</details>
 
 <br>
 
