@@ -366,8 +366,8 @@ command.
 ## Extras
 
 The [extras] folder of this repository contains configurations for
-**Alacritty**, **fzf**, **iTerm-2**, **WezTerm**, and **Windows Terminal**.
-To use these configurations, refer to the respective documentation.
+**Alacritty**, **fzf**, **iTerm-2**, **Kitty**, **WezTerm**, and **Windows
+Terminal**. To use these configurations, refer to the respective documentation.
 
 [extras]: https://github.com/sam4llis/nvim-tundra/tree/main/extras
 

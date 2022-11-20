@@ -2,4 +2,5 @@
 
 ## Installation instructions
 
-- Add the contents inside `kitty.conf` into your own `~/.config/kitty/kitty.conf` config file
+- Copy the contents of `tundra.conf` into your local `~/.config/kitty/kitty.conf`
+  configuration file.
