@@ -92,8 +92,8 @@ Plug 'sam4llis/nvim-tundra' " vim-plug
 
 ## Usage
 
-To use the Tundra's [default configuration][configuration], add the following
-to your Neovim configuration:
+To use Tundra's [default configuration][configuration], add the following to
+your Neovim configuration:
 
 ```lua
 vim.opt.background = 'dark'
