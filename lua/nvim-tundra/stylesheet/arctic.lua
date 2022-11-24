@@ -2,6 +2,8 @@ package.loaded['nvim-tundra.palette.arctic'] = nil
 local cp = require('nvim-tundra.palette.arctic')
 local stylesheet = {}
 
+stylesheet.cp = cp
+
 stylesheet.fg = {
   normal = cp.gray._50, -- Normal (default) window foreground.
   conceal = cp.gray._500, -- Placeholder conceal characters

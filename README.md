@@ -146,12 +146,13 @@ require('nvim-tundra').setup({
   plugins = {
     lsp = true,
     treesitter = true,
+    telescope = true,
     nvimtree = true,
     cmp = true,
     context = true,
     dbui = true,
     gitsigns = true,
-    telescope = true,
+    neogit = true,
   },
   overwrite = {
     colors = {},
@@ -384,6 +385,7 @@ Terminal**. To use these configurations, refer to the respective documentation.
 - [vim-dadbod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
+- [Neogit](https://github.com/TimUntersberger/neogit)
 
 <br>
 

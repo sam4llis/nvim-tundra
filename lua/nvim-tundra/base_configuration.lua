@@ -32,12 +32,13 @@ local base_configuration = {
   plugins = {
     lsp = true,
     treesitter = true,
+    telescope = false,
     nvimtree = false,
     cmp = false,
     context = false,
     dbui = false,
     gitsigns = false,
-    telescope = false,
+    neogit = false,
   },
   overwrite = {
     colors = {},

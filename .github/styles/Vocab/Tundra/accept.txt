@@ -2,6 +2,7 @@ Catppuccin
 Color
 LSP
 Lua
+Neogit
 Nightfox
 Nightly
 RNH
