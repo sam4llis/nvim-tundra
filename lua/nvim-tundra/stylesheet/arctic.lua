@@ -38,7 +38,7 @@ stylesheet.syntax = {
   regex = cp.red._500, -- Regular expressions.
   string = cp.green._500, -- Strings.
   type = cp.red._400, -- Type (and class) definitions and annotations.
-  variable = cp.gray._50, -- Variables.
+  variable = cp.gray._200, -- Variables.
 }
 
 stylesheet.syntax.builtin = {
