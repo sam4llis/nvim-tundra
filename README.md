@@ -118,6 +118,10 @@ require('nvim-tundra').setup({
     enabled = false,
     color = nil,
   },
+  sidebars = {
+    enabled = true,
+    color = nil,
+  },
   editor = {
     search = {},
     substitute = {},
