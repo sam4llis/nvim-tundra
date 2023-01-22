@@ -19,6 +19,14 @@ M.map = function(ss, opts)
 
     NormalFloat = { fg = ss.fg.normal, bg = ss.bg.floating }, -- Floating window.
 
+    -- NOTE: This is not a default editor highlight group.
+    NormalSB = {
+      fg = ss.fg.normal,
+      bg = (opts.sidebars.enabled and (opts.sidebars.color or ss.bg.sidebar))
+          or (opts.transparent_background and ss.bg.transparent)
+          or ss.bg.sidebar,
+    }, -- Sidebar windows.
+
     -- Fold and sign column highlights.
     Folded = {
       fg = ss.fg.conceal,

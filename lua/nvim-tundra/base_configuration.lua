@@ -4,6 +4,20 @@ local base_configuration = {
     enabled = false,
     color = nil,
   },
+  sidebars = {
+    enabled = false,
+    color = nil,
+    filetypes = {
+      'help',
+      'dbui',
+      'fugitive',
+      'gitcommit',
+      'netrw',
+      'NvimTree',
+      'qf',
+      'terminal',
+    },
+  },
   editor = {
     search = {},
     substitute = {},

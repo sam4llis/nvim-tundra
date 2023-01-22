@@ -209,12 +209,29 @@ respect your configuration settings.
 
   - `color` (string | nil): A hexadecimal colour value or colour keyword that
     the background of non-current windows inherits. If nil, non-current windows
-    use the [default colour][colour] for dimmed windows. Defaults to `nil`.
+    use the [default colour][dim colour] for dimmed windows. Defaults to `nil`.
+
+- `sidebars` (table):
+
+  - `enabled` (boolean): If true, all 'sidebar' windows (outlined below) inherit
+    the background colour `color`. Defaults to `false`.
+
+  - `color` (string | nil): A hexadecimal colour value or colour keyword that
+    the background of 'sidebar' windows inherits. If nil, all 'sidebar' windows
+    use the [default colour][sidebar colour] for 'sidebar' windows. Defaults to
+    `nil`.
+
+  - `filetypes` (array[str] table): Defines filetypes treated as 'sidebar'
+     windows. Leaving `filetypes` as an empty table inherits the default
+     filetypes. Adding a filetype to `filetypes` overwrites the default
+     filetypes. Defaults to [`sidebars.filetypes`][filetypes].
 
 > **Note**:
 > You can toggle general settings using the `:Tundra` [command line sugar](#command-line-sugar).
 
-[colour]: https://github.com/sam4llis/nvim-tundra/blob/dev/lua/nvim-tundra/stylesheet/arctic.lua#L21
+[dim colour]: https://github.com/sam4llis/nvim-tundra/blob/main/lua/nvim-tundra/stylesheet/arctic.lua#L21
+[sidebar colour]: https://github.com/sam4llis/nvim-tundra/blob/main/lua/nvim-tundra/stylesheet/arctic.lua#L24
+[filetypes]: https://github.com/sam4llis/nvim-tundra/blob/main/lua/nvim-tundra/base_configuration.lua#L11-L18
 
 ### Plugins
 
@@ -268,6 +285,9 @@ command.
 
 - `:Tundra toggle_dim`: Toggles the `dim_inactive_windows.enabled` option
   specified in the Tundra `setup` function.
+
+- `:Tundra toggle_sidebars`: Toggles the `sidebars.enabled` option specified in
+  the Tundra `setup` function.
 
 <br>
 

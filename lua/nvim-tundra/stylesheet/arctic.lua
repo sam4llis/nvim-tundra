@@ -21,6 +21,7 @@ stylesheet.bg = {
   visual = cp.gray._700, -- Visual selection background.
   transparent = cp.transparent,
   dimmed = cp.gray._950, -- Default background if `dim_inactive_windows` is set.
+  sidebar = cp.gray._925,
 }
 
 stylesheet.syntax = {

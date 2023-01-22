@@ -20,6 +20,14 @@ M.toggle_transparency = function(opts)
   })
 end
 
+M.toggle_sidebars = function(opts)
+  require('nvim-tundra').setup({
+    sidebars = {
+      enabled = not vim.tbl_get(vim.g.tundra_opts, 'sidebars', 'enabled')
+    }
+  })
+end
+
 vim.api.nvim_create_user_command('Tundra',
   function(opts)
     M[opts.args](opts)
@@ -32,7 +40,7 @@ vim.api.nvim_create_user_command('Tundra',
         function(value)
           return vim.startswith(value, line)
         end,
-        vim.tbl_values(vim.tbl_extend('force', {}, { 'toggle_dim', 'toggle_transparency' }))
+        vim.tbl_values(vim.tbl_extend('force', {}, { 'toggle_dim', 'toggle_transparency', 'toggle_sidebars' }))
       )
     end,
   }
