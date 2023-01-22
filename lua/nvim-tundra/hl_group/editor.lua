@@ -88,9 +88,25 @@ M.map = function(ss, opts)
     }, -- Status lines of not-current windows Note: if this is equal to 'StatusLine' Vim will use '^^^' in the status line of the current window.
 
     -- Tabline highlights.
-    TabLine     = { fg = ss.fg.statusline, bg = ss.bg.normal }, -- Tab pages line, not active tab page label.
-    TabLineFill = { bg = ss.bg.normal }, -- Tab pages line, where there are no labels.
-    TabLineSel  = { fg = ss.bg.statusline, bg = ss.bg.cursorline }, -- Tab pages line, active tab page label.
+    TabLine = {
+      fg = ss.fg.statusline,
+      bg = opts.transparent_background and ss.bg.transparent
+          or ss.bg.normal,
+    }, -- Tab pages line, not active tab page label.
+
+    TabLineFill = {
+      bg = opts.transparent_background and ss.bg.transparent
+          or ss.bg.normal,
+    }, -- Tab pages line, where there are no labels.
+
+    TabLineSel = {
+      fg = opts.transparent_background and ss.syntax.func
+          or ss.bg.statusline,
+      bg = opts.transparent_background and ss.bg.transparent
+          or ss.bg.cursorline,
+      bold = opts.transparent_background and true or false,
+      -- bg = ss.bg.cursorline,
+    }, -- Tab pages line, active tab page label.
 
     -- Winbar highlights.
     WinBar = {
