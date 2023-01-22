@@ -4,12 +4,27 @@ M.map = function(ss, opts)
   return {
 
     -- Normal text highlights.
-    Normal = { fg = ss.fg.normal, bg = opts.transparent_background and ss.bg.transparent or ss.bg.normal }, -- Current window.
-    NormalNC = { fg = ss.fg.normal, bg = (opts.dim_inactive_windows.enabled and (opts.dim_inactive_windows.color or ss.bg.dimmed)) or (opts.transparent_background and ss.bg.transparent) or ss.bg.normal }, -- Non-current windows.
+    Normal = {
+      fg = ss.fg.normal,
+      bg = opts.transparent_background and ss.bg.transparent
+          or ss.bg.normal,
+    }, -- Current window.
+
+    NormalNC = {
+      fg = ss.fg.normal,
+      bg = (opts.dim_inactive_windows.enabled and (opts.dim_inactive_windows.color or ss.bg.dimmed))
+          or (opts.transparent_background and ss.bg.transparent)
+          or ss.bg.normal,
+    }, -- Non-current windows.
+
     NormalFloat = { fg = ss.fg.normal, bg = ss.bg.floating }, -- Floating window.
 
     -- Fold and sign column highlights.
-    Folded = { fg = ss.fg.conceal, bg = opts.transparent_background and ss.bg.transparent or ss.bg.floating }, -- Line used for closed folds.
+    Folded = {
+      fg = ss.fg.conceal,
+      bg = opts.transparent_background and ss.bg.transparent
+          or ss.bg.floating
+    }, -- Line used for closed folds.
     FoldColumn = { fg = ss.fg.conceal }, -- The `foldcolumn`.
     SignColumn = { fg = ss.fg.conceal }, -- Column where signs are displayed.
 
@@ -39,14 +54,38 @@ M.map = function(ss, opts)
     QuickFixLine = { link = 'CursorLine' }, -- Current `quickfix` item in the quickfix window. Combined with `hl-CursorLine` when the cursor is there.
 
     -- Search/substitution highlights.
-    Search = vim.tbl_extend('force', { fg = ss.bg.normal, bg = ss.diagnostics.information, bold = true }, opts.editor.search), -- Last search pattern.
-    IncSearch = vim.tbl_extend('force', { fg = ss.bg.normal, bg = ss.diagnostics.hint, bold = true }, opts.editor.search), -- `incsearch` highlighting; also used for the text replaced with ':s///c'.
+    Search = vim.tbl_extend('force', {
+      fg = ss.bg.normal,
+      bg = ss.diagnostics.information,
+      bold = true,
+    }, opts.editor.search), -- Last search pattern.
+
+    IncSearch = vim.tbl_extend('force', {
+      fg = ss.bg.normal,
+      bg = ss.diagnostics.hint,
+      bold = true,
+    }, opts.editor.search), -- `incsearch` highlighting; also used for the text replaced with ':s///c'.
+
     CurSearch = { link = 'IncSearch' }, -- Used for highlighting a search pattern under the cursor (see `hlsearch`).
-    Substitute = vim.tbl_extend('force', { fg = ss.bg.normal, bg = ss.diagnostics.error, bold = true }, opts.editor.substitute), -- Substitute replacement text.
+
+    Substitute = vim.tbl_extend('force', {
+      fg = ss.bg.normal,
+      bg = ss.diagnostics.error,
+      bold = true,
+    }, opts.editor.substitute), -- Substitute replacement text.
 
     -- Statusline highlights.
-    StatusLine   = { fg = ss.fg.statusline, bg = opts.transparent_background and ss.bg.transparent or ss.bg.normal }, -- Status line of current window.
-    StatusLineNC = { fg = ss.fg.normal, bg = opts.transparent_background and ss.bg.transparent or ss.bg.normal }, -- Status lines of not-current windows Note: if this is equal to 'StatusLine' Vim will use '^^^' in the status line of the current window.
+    StatusLine   = {
+      fg = ss.fg.statusline,
+      bg = opts.transparent_background and ss.bg.transparent
+          or ss.bg.normal,
+    }, -- Status line of current window.
+
+    StatusLineNC = {
+      fg = ss.fg.normal,
+      bg = opts.transparent_background and ss.bg.transparent
+          or ss.bg.normal,
+    }, -- Status lines of not-current windows Note: if this is equal to 'StatusLine' Vim will use '^^^' in the status line of the current window.
 
     -- Tabline highlights.
     TabLine     = { fg = ss.fg.statusline, bg = ss.bg.normal }, -- Tab pages line, not active tab page label.
@@ -54,8 +93,19 @@ M.map = function(ss, opts)
     TabLineSel  = { fg = ss.bg.statusline, bg = ss.bg.cursorline }, -- Tab pages line, active tab page label.
 
     -- Winbar highlights.
-    WinBar   = { fg = ss.statusline, bg = opts.transparent_background and ss.bg.transparent or ss.bg.normal, bold = true }, -- Window bar of current window.
-    WinBarNC = { fg = ss.statusline, bg = opts.transparent_background and ss.bg.transparent or ss.bg.floating, bold = true }, -- Window bar of not-current windows.
+    WinBar = {
+      fg = ss.statusline,
+      bg = opts.transparent_background and ss.bg.transparent
+          or ss.bg.normal,
+      bold = true,
+    }, -- Window bar of current window.
+
+    WinBarNC = {
+      fg = ss.statusline,
+      bg = opts.transparent_background and ss.bg.transparent
+          or ss.bg.floating,
+      bold = true,
+    }, -- Window bar of not-current windows.
 
     -- Spelling highlights.
     -- Word that is not recognized by the spellchecker. `spell` Combined with the highlighting used otherwise.
