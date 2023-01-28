@@ -157,6 +157,7 @@ require('nvim-tundra').setup({
     dbui = true,
     gitsigns = true,
     neogit = true,
+    textfsm = true,
   },
   overwrite = {
     colors = {},
@@ -410,6 +411,7 @@ Terminal**. To use these configurations, refer to the respective documentation.
 - [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 - [Neogit](https://github.com/TimUntersberger/neogit)
+- [vim-textfsm](https://github.com/oasys/vim-textfsm)
 
 <br>
 

@@ -53,6 +53,7 @@ local base_configuration = {
     dbui = false,
     gitsigns = false,
     neogit = false,
+    textfsm = false,
   },
   overwrite = {
     colors = {},
