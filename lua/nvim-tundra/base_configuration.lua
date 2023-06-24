@@ -45,6 +45,7 @@ local base_configuration = {
   },
   plugins = {
     lsp = true,
+    semantic_tokens = true,
     treesitter = true,
     telescope = false,
     nvimtree = false,

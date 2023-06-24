@@ -149,6 +149,7 @@ require('nvim-tundra').setup({
   },
   plugins = {
     lsp = true,
+    semantic_tokens = true,
     treesitter = true,
     telescope = true,
     nvimtree = true,
