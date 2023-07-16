@@ -22,7 +22,12 @@ M.setup = function(user_opts)
 end
 
 M.load = function()
-  local opts = vim.g.tundra_opts or base_configuration
+  -- Call `setup` to instantiate global `tundra_opts` table. If the table has
+  -- not been previously assigned (e.g., the user has not invoked the `setup`
+  -- function in their personal configuration) then use the base configuration,
+  -- and assign the base configuration to the global `tundra_opts` table.
+  M.setup(vim.g.tundra_opts or base_configuration)
+  local opts = vim.g.tundra_opts
 
   -- If the global variable `tundra_biome` is not set, then respect the user's background colour.
   if vim.g.tundra_biome == nil then
@@ -38,8 +43,8 @@ M.load = function()
   }
 
   -- Load sidebar autocmds if they are enabled, and transparent background is not enabled.
-  if not vim.g.tundra_opts.transparent_background then
-    if vim.g.tundra_opts.sidebars.enabled then
+  if not opts.transparent_background then
+    if opts.sidebars.enabled then
       require('nvim-tundra.autocmds.sidebars')
     end
   end
