@@ -3,13 +3,13 @@ local M = {}
 M.map = function(ss, opts)
   return {
     -- Status buffer.
-    -- NeogitBranch = {},
-    -- NeogitRemote = {},
-    -- NeogitUnmergedInto = {},
-    -- NeogitUnpulledFrom = {},
-    -- NeogitObjectId = {},
-    -- NeogitStash = {},
-    -- NeogitFold = {},
+    NeogitBranch = { link = 'Function' },
+    NeogitRemote = { link = 'Function' },
+    NeogitUnmergedInto = { link = 'Function' },
+    NeogitUnpulledFrom = { link = 'Function' },
+    NeogitObjectId = { fg = ss.syntax.number },
+    NeogitStash = { link = 'NeogitObjectId' },
+    NeogitFold = { link = 'Comment' },
 
     -- Status buffer items - git status.
     -- NeogitChangeModified = {},
@@ -22,14 +22,14 @@ M.map = function(ss, opts)
     -- NeogitChangeNewFile = {},
 
     -- Status buffer section header.
-    -- NeogitUntrackedfiles = {},
-    -- NeogitUnstagedchanges = {},
-    -- NeogitUnmergedchanges = {},
-    -- NeogitUnpulledchanges = {},
-    -- NeogitRecentcommits = {},
-    -- NeogitStagedchanges = {},
-    -- NeogitStashes = {},
-    -- NeogitRebasing = {},
+    NeogitUntrackedfiles = { link = 'PreProc' },
+    NeogitUnstagedchanges = { link = 'PreProc' },
+    NeogitUnmergedchanges = { link = 'PreProc' },
+    NeogitUnpulledchanges = { link = 'PreProc' },
+    NeogitRecentcommits = { link = 'PreProc' },
+    NeogitStagedchanges = { link = 'PreProc' },
+    NeogitStashes = { link = 'PreProc' },
+    NeogitRebasing = { link = 'PreProc' },
 
     -- Signs (line highlights).
     NeogitHunkHeader = { link = 'diffLine' },
@@ -54,14 +54,14 @@ M.map = function(ss, opts)
     -- NeogitGraphBold = {},
 
     -- Popups.
-    -- NeogitPopupSectionTitle = {},
-    -- NeogitPopupBranchName = {},
+    NeogitPopupSectionTitle = { link = 'Function' },
+    NeogitPopupBranchName = { link = 'PreProc' },
     -- NeogitPopupBold = {},
-    -- NeogitPopupSwitchKey = {},
-    -- NeogitPopupOptionsKey = {},
-    -- NeogitPopupConfigKey = {},
-    -- NeogitPopupActionKey = {},
-    -- NeogitPopupSwitchDisabled = {},
+    NeogitPopupSwitchKey = { link = 'Number' },
+    NeogitPopupOptionKey = { link = 'Number' },
+    NeogitPopupConfigKey = { link = 'Number' },
+    NeogitPopupActionKey = { link = 'Number' },
+    NeogitPopupSwitchDisabled = { link = 'Comment' },
     -- NeogitPopupOptionsDisabled = {},
     -- NeogitPopupConfigDisabled = {},
     -- NeogitPopupActionDisabled = {},
@@ -71,9 +71,9 @@ M.map = function(ss, opts)
     -- NeogitPopupActionEnabled = {},
 
     -- Notifications.
-    -- NeogitNotificationInfo = {},
-    -- NeogitNotificationWarning = {},
-    -- NeogitNotificationError = {},
+    NeogitNotificationInfo = { link = 'DiagnosticInfo' },
+    NeogitNotificationWarning = { link = 'DiagnosticWarn' },
+    NeogitNotificationError = { link = 'DiagnosticError' },
 
     -- Command history view.
     -- NeogitCommandText = {},
