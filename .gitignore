@@ -7,3 +7,6 @@ Session.vim
 # Ignore Vale packages except for Tundra vocabulary.
 .github/styles/*
 !.github/styles/Vocab/
+
+# Ignore lua LSP files.
+.luarc.json
