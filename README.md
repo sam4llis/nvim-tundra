@@ -57,7 +57,7 @@
 
 - Neovim [v0.7.0][nvim-v0.7.0] or higher.
 
-> **Note**:
+> [!IMPORTANT]<br>
 > Some plugin integrations require Neovim v0.8. If your Neovim version doesn't
 > support a plugin integration, Tundra displays a warning message when enabling
 > that integration. Use Neovim [v0.8.0][nvim-v0.8.0] or higher, or downgrade to
@@ -65,7 +65,7 @@
 
 - A terminal with true colour support.
 
-> **Note**:
+> [!NOTE]<br>
 > The default macOS terminal doesn't support true colour. Use a terminal that
 > supports true colour such as [iTerm2][iterm2].
 
@@ -173,7 +173,7 @@ vim.cmd('colorscheme tundra')
 You must invoke the `setup` function before the `:colorscheme tundra` command to
 respect your configuration settings.
 
-> **Note**:
+> [!NOTE]<br>
 > You can omit empty tables and `nil` fields in the configuration table to
 > respect default settings.
 
@@ -232,7 +232,7 @@ respect your configuration settings.
      filetypes. Adding a filetype to `filetypes` overwrites the default
      filetypes. Defaults to [`sidebars.filetypes`][filetypes].
 
-> **Note**:
+> [!NOTE]<br>
 > You can toggle general settings using the `:Tundra` [command line sugar](#command-line-sugar).
 
 [dim colour]: https://github.com/sam4llis/nvim-tundra/blob/main/lua/nvim-tundra/stylesheet/arctic.lua#L21
@@ -326,7 +326,7 @@ command.
   The `fg` and `bg` flags also accept hexadecimal values if you want to add your
   own colours.
 
-  > **Note**:
+  > [!NOTE]<br>
   > Colour shades in Tundra palettes range from `0` to `1000`. These numbers
   > represent the lightest and darkest shades of each colour. Shades typically
   > increment in values of `100`.
@@ -382,7 +382,7 @@ command.
   })
   ```
 
-  > **Note**:
+  > [!IMPORTANT]<br>
   > Highlights defined in the `overwrite.highlights` subtable take precedence over
   > highlights defined in the `editor` and `syntax` subtables in Tundra's `setup`
   > function.
