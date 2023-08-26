@@ -3,9 +3,14 @@ if vim.version().minor < 7 then
   return
 end
 
+-- Clear all highlight groups before loading the colorscheme.
+if vim.g.colors_name then
+  vim.cmd('highlight clear')
+end
+
+vim.g.colors_name = 'tundra'
+
 -- Set `termguicolors` before loading the colorscheme.
 vim.opt.termguicolors = true
 
--- Clear all highlight groups before loading the colorscheme.
-vim.cmd('highlight clear')
 require('nvim-tundra').load()
