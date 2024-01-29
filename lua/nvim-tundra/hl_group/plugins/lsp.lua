@@ -9,6 +9,7 @@ M.map = function(ss, opts)
     LspCodeLens = { fg = ss.syntax.comment }, -- Used to color the virtual text of the codelens.
     LspCodeLensSeparator = { fg = ss.bg.cursorline }, -- Used to color the separator between two or more code lenses.
     LspSignatureActiveParameter = { fg = ss.diagnostics.information }, -- Used to highlight the active parameter in the signature help.
+    LspInlayHint = { fg = ss.syntax.comment }, -- Used for highlighting inlay hints.
 
     DiagnosticError = vim.tbl_extend('force', {
       fg = ss.diagnostics.error,
