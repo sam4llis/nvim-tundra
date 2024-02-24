@@ -326,7 +326,6 @@ command.
   The `fg` and `bg` flags also accept hexadecimal values if you want to add your
   own colours.
 
-  > [!NOTE]<br>
   > Colour shades in Tundra palettes range from `0` to `1000`. These numbers
   > represent the lightest and darkest shades of each colour. Shades typically
   > increment in values of `100`.
@@ -382,7 +381,6 @@ command.
   })
   ```
 
-  > [!IMPORTANT]<br>
   > Highlights defined in the `overwrite.highlights` subtable take precedence over
   > highlights defined in the `editor` and `syntax` subtables in Tundra's `setup`
   > function.
