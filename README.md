@@ -104,6 +104,7 @@ To use Tundra's [default configuration][configuration], add the following to
 your Neovim configuration:
 
 ```lua
+vim.g.tundra_biome = 'arctic' -- 'arctic' or 'jungle'
 vim.opt.background = 'dark'
 vim.cmd('colorscheme tundra')
 ```
@@ -174,6 +175,7 @@ require('nvim-tundra').setup({
   },
 })
 
+vim.g.tundra_biome = 'arctic' -- 'arctic' or 'jungle'
 vim.opt.background = 'dark'
 vim.cmd('colorscheme tundra')
 ```
