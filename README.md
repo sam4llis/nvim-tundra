@@ -20,15 +20,23 @@
       <img width="767" alt="Lua" src="https://user-images.githubusercontent.com/43378933/200200134-518d715a-bc26-4863-baa4-c3126a2213f3.png">
     </td>
     <td>
-      <img width="767" alt="Python" src="https://user-images.githubusercontent.com/43378933/200200212-8e474493-f002-4509-a904-84cf66a77019.png">
+      <img width="767" alt="nvim-tree" src="https://user-images.githubusercontent.com/43378933/200200274-6d1834ae-f90a-450e-879e-07cb9a2383a3.png">
     </td>
   </tr>
   <tr>
     <td>
-      <img width="767" alt="nvim-tree" src="https://user-images.githubusercontent.com/43378933/200200274-6d1834ae-f90a-450e-879e-07cb9a2383a3.png">
+      <img width="767" alt="Python-Arctic" src="https://user-images.githubusercontent.com/43378933/200200212-8e474493-f002-4509-a904-84cf66a77019.png">
     </td>
     <td>
-      <img width="767" alt="telescope.nvim" src="https://user-images.githubusercontent.com/43378933/200200315-b2ad9716-6462-443b-83d1-6f6cf366d88d.png">
+      <img width="758" alt="Python-Jungle" src="https://github.com/sam4llis/nvim-tundra/assets/43378933/f81ae49d-9b0a-452b-9b45-3826e902509e">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img width="767" alt="telescope.nvim-Arctic" src="https://user-images.githubusercontent.com/43378933/200200315-b2ad9716-6462-443b-83d1-6f6cf366d88d.png">
+    </td>
+    <td>
+      <img width="767" alt="telescope.nvim-Jungle" src="https://github.com/sam4llis/nvim-tundra/assets/43378933/113483ca-7a4e-4a8e-9f89-64d4fc40c7c6">
     </td>
   </tr>
    <tr>
@@ -96,6 +104,7 @@ To use Tundra's [default configuration][configuration], add the following to
 your Neovim configuration:
 
 ```lua
+vim.g.tundra_biome = 'arctic' -- 'arctic' or 'jungle'
 vim.opt.background = 'dark'
 vim.cmd('colorscheme tundra')
 ```
@@ -166,6 +175,7 @@ require('nvim-tundra').setup({
   },
 })
 
+vim.g.tundra_biome = 'arctic' -- 'arctic' or 'jungle'
 vim.opt.background = 'dark'
 vim.cmd('colorscheme tundra')
 ```
@@ -326,7 +336,6 @@ command.
   The `fg` and `bg` flags also accept hexadecimal values if you want to add your
   own colours.
 
-  > [!NOTE]<br>
   > Colour shades in Tundra palettes range from `0` to `1000`. These numbers
   > represent the lightest and darkest shades of each colour. Shades typically
   > increment in values of `100`.
@@ -382,7 +391,6 @@ command.
   })
   ```
 
-  > [!IMPORTANT]<br>
   > Highlights defined in the `overwrite.highlights` subtable take precedence over
   > highlights defined in the `editor` and `syntax` subtables in Tundra's `setup`
   > function.
